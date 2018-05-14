@@ -11,3 +11,11 @@ für den eigenen Gebrauch eingeschränkt werden, oder aber auch publiziert zur
 freien Verfügung stehen, oder für Geld angeboten werden.
 <p/>
 Die "PWA" Rich-Client-Applikation ist plattformunabhängig und auch im Webbrowser ausführbar.
+
+---
+
+# Ergebnisdokument
+* Remark-Präsentationen: Branches --> https://github.com/Ufo391/RichClient2018
+* Pflichtenheft: https://github.com/Ufo391/RichClient18-TraderBOT/tree/master/Dokumentation
+* Projektpräsentation: -
+* Namen der Projektbeteiligten: Nikolai Kloß
