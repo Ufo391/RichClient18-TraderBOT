@@ -17,12 +17,41 @@ T-BOT, Nikolai Kloß, (Inhaltsverzeichnis)
     auch publiziert zur freien Verfügung stehen, oder für Geld angeboten werden.
 
     Die "PWA" Rich-Client-Applikation ist plattformunabhängig und auch im
-    Webbrowser ausführbar. 
+    Webbrowser ausführbar.
 
 ## 1.2 Ziele
-    - Anwendungsbereiche, Motivation, Umfang, Marktanforderungen, Alleinstellungsmerkmale
-    - Informationen zu Zielbenutzergruppen und deren Merkmale (Bildung, Erfahrung, Sachkenntnis)
-    - Abgrenzung (Was ist das Softwaresystem _nicht_)
+    - Anwendungsbereiche:
+          Die Applikation findet im Bereich des automatisierten-echtzeit-Handels
+          seinen Platz.
+
+    - Motivation:
+          Eine von Community, um Algorithmen beliebig erweiterbare
+          und plattformunabhängige, freie Trading-Applikation schaffen.
+
+    - Umfang:
+          * Verwaltung von Wallets diverser Handelsplattformen
+          * Visualisierung von Charts, Positionen, Indizes
+          * Echtzeithandel in der Applikation
+          * Automatisierter handel durch spezielle Algorithmen (BOTs)
+          * BOTs lassen sich vom Anwender erstellen
+          * BOTS lassen sich vom Ersteller käuflich vertreiben    
+
+    - Marktanforderungen:
+          * Echtzeitanforderung, stabile Applikation, pflegende Community
+
+    - Alleinstellungsmerkmale:
+          * Automatisierter Handel ist erweiterbar
+          * Die Applikation ist für den Anwender kostenlos   
+
+    - Zielbenutzergruppen:
+          * Gute Kenntnisse in IT-technischen Zusammenhängen
+          * Interesse am Kryptowährungenhandel
+          * Kenntnisse zu finanzwirtschaftlichen Kontext
+          * Erfahrungen in Spekulationsgeschäften
+
+    - Abgrenzung:
+          * keine Garantie für Profit
+          * Ausschließlich für Kryptowährungenhandel (kein Forex, Aktien ...)          
 
 # 2 Anforderungen
 
