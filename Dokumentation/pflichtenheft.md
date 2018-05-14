@@ -1,12 +1,23 @@
 # Anforderungs- und Entwurfsspezifikation ("Pflichtenheft")
 
-Titel, Autoren, (Inhaltsverzeichnis)
+T-BOT, Nikolai Kloß, (Inhaltsverzeichnis)
 
 # 1 Einführung
 
 ## 1.1 Beschreibung
-    - Projektname
-    - Darstellung der Produktvision in Prosa (5-10 Sätze)
+    Bei "T-BOT" handelt es sich um einen automatisierten Händler für
+    Kryptowährungen. Die progressive-Web-App ist in der Lage, Depot's/Wallets
+    diverser Handelsplattformen zu verwalten und Positionen an den jeweiligen
+    Märkten zu öffnen/schließen. Dem Benutzer steht es hierbei offen,
+    in Echtzeit selbst zu handeln, oder dieses, einen der frei- oder
+    auch käuflich erwerbaren Handelsalgorithmen zu überlassen.
+
+    Die Handelsalgorithmen (BOTs) lassen sich vom Anwender selbst erstellen.
+    Die BOTs können für den eigenen Gebrauch eingeschränkt werden, oder aber
+    auch publiziert zur freien Verfügung stehen, oder für Geld angeboten werden.
+
+    Die "PWA" Rich-Client-Applikation ist plattformunabhängig und auch im
+    Webbrowser ausführbar. 
 
 ## 1.2 Ziele
     - Anwendungsbereiche, Motivation, Umfang, Marktanforderungen, Alleinstellungsmerkmale
@@ -19,7 +30,7 @@ Titel, Autoren, (Inhaltsverzeichnis)
     - Use-Case Diagramme
     - Strukturierung der Diagramme in funktionale Gruppen
 
-## 2.2 Nicht-funktionale Anforderungen 
+## 2.2 Nicht-funktionale Anforderungen
 
 ### 2.2.1 Rahmenbedingungen
     - Normen, Standards, Protokolle, Hardware, externe Vorgaben
@@ -35,7 +46,7 @@ Titel, Autoren, (Inhaltsverzeichnis)
     - Modellierung der Navigation zwischen den Screens der GUI-Mockups als Zustandsdiagramm
 
 ## 2.4 Anforderungen im Detail
-    - User Stories mit Akzeptanzkritierien 
+    - User Stories mit Akzeptanzkritierien
     - Optional: Name (oder ID) und Priorität ("Must", "Should", "Could", "Won't")
     - Strukturierung der User Stories in funktionale Gruppen
 
@@ -68,7 +79,7 @@ Titel, Autoren, (Inhaltsverzeichnis)
 ## 3.2 Softwarearchitektur
     - Darstellung von Softwarebausteinen (Module, Schichten, Komponenten)
 
-## 3.3 Datenmodell 
+## 3.3 Datenmodell
     - Konzeptionelles Analyseklassendiagramm
 
 ## 3.4 Abläufe
@@ -95,13 +106,10 @@ Titel, Autoren, (Inhaltsverzeichnis)
 
 # 5 Anhänge
 
-## 5.1 Glossar 
+## 5.1 Glossar
     - Definitionen, Abkürzungen, Begriffe
 
 ## 5.2 Referenzen
     - Handbücher, Gesetze
 
 ## 5.3 Index
-
-
-
