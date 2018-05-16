@@ -34,7 +34,8 @@ T-BOT, Nikolai Kloß, (Inhaltsverzeichnis)
           * Echtzeithandel in der Applikation
           * Automatisierter handel durch spezielle Algorithmen (BOTs)
           * BOTs lassen sich vom Anwender erstellen
-          * BOTS lassen sich vom Ersteller käuflich vertreiben    
+          * BOTs lassen sich vom Ersteller käuflich vertreiben   
+          * BOTs lassen sich von Anwendern bewerten
 
     - Marktanforderungen:
           * Echtzeitanforderung, stabile Applikation, pflegende Community
@@ -72,7 +73,24 @@ T-BOT, Nikolai Kloß, (Inhaltsverzeichnis)
 
 ## 2.3 Graphische Benutzerschnittstelle
     - GUI-Mockups passend zu User Stories
+
+![LoginView](MockUps/LoginView.png)
+![RegisterView](MockUps/RegisterView.png)
+![WalletView](MockUps/WalletView.png)
+![WalletView-Sidebar](MockUps/WalletViewSidebarMenu.png)
+![HistoryView](MockUps/HistoryView.png)
+![BOTMarketView](MockUps/BOTMarketView.png)
+![BOTMarketView](MockUps/BOTMarketViewKaufen.png)
+![StrategyChooserView](MockUps/StrategyChooserView.png)
+![StrategyEditorView](MockUps/StrategyEditorView.png)
+![StrategyChooserView - Code](MockUps/StrategyEditorView - code.png)
+![StrategyChooserView - Code](MockUps/StrategyEditorView - debug.png)
+![StrategyChooserView - Code](MockUps/StrategyEditorView - options.png)
+![BOTSettingsView](MockUps/BOTSettingsView.png)
+![UserSettingsView](MockUps/UserSettingsView.png)
+
     - Modellierung der Navigation zwischen den Screens der GUI-Mockups als Zustandsdiagramm
+![Navigation](MockUps/Navigation der Views.png)
 
 ## 2.4 Anforderungen im Detail
     - User Stories mit Akzeptanzkritierien
