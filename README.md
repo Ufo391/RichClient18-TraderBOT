@@ -17,5 +17,5 @@ Die "PWA" Rich-Client-Applikation ist plattformunabhängig und auch im Webbrowse
 # Ergebnisdokument
 * Remark-Präsentationen: Branches --> https://github.com/Ufo391/RichClient2018
 * Pflichtenheft: https://github.com/Ufo391/RichClient18-TraderBOT/blob/master/Dokumentation/pflichtenheft.md
-* Projektpräsentation: -
+* Projektpräsentation: https://github.com/Ufo391/RichClient18-TraderBOT/blob/master/Pr%C3%A4sentation/
 * Namen der Projektbeteiligten: Nikolai Kloß
