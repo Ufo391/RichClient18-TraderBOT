@@ -16,6 +16,12 @@ T-BOT, Nikolai Kloß, (Inhaltsverzeichnis)
     Die BOTs können für den eigenen Gebrauch eingeschränkt werden, oder aber
     auch publiziert zur freien Verfügung stehen, oder für Geld angeboten werden.
 
+    Die Applikation liegt in 2 Varianten vor. T-BOT kann
+    kostenlos verwendet werden. Die Bezahlversion beinhaltet
+    das Feature, dass der eingesetzte BOT 24/7 handelt,
+    unabhängig davon, ob der Anwender die App beendet hat.
+    Es werden hierzu Serverressourcen bereitgestellt.
+
     Die "PWA" Rich-Client-Applikation ist plattformunabhängig und auch im
     Webbrowser ausführbar.
 
