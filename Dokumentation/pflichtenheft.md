@@ -71,6 +71,7 @@ T-BOT, Nikolai Kloß, (Inhaltsverzeichnis)
 ![Config](UseCase/USE_CASE-Config2.png)
 ![Realtime](UseCase/USE_CASE-Realtime2.png)
 ![BOTs](UseCase/USE_CASE-BOT.png)
+
     - Strukturierung der Diagramme in funktionale Gruppen
 
 ## 2.2 Nicht-funktionale Anforderungen
