@@ -102,7 +102,7 @@ T-BOT, Nikolai Kloß, (Inhaltsverzeichnis)
 ![UserSettingsView](MockUps/UserSettingsView.png)
 
     - Modellierung der Navigation zwischen den Screens der GUI-Mockups als Zustandsdiagramm
-![Navigation](MockUps/Navigation der Views.png)
+![Navigation](MockUps/Navigation.png)
 
 ## 2.4 Anforderungen im Detail
     - User Stories mit Akzeptanzkritierien
