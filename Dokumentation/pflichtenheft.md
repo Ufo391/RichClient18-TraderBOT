@@ -68,8 +68,8 @@ T-BOT, Nikolai Kloß, (Inhaltsverzeichnis)
     - Use-Case Diagramme
 ![T-BOT](UseCase/USE_CASE-Overview.png)
 ![Wallet](UseCase/USE_CASE-Wallet.png)
-![Config](UseCase/USE_CASE-Config.png)
-![Realtime](UseCase/USE_CASE-Realtime.png)
+![Config](UseCase/USE_CASE-Config2.png)
+![Realtime](UseCase/USE_CASE-Realtime2.png)
 ![BOTs](UseCase/USE_CASE-BOT.png)
     - Strukturierung der Diagramme in funktionale Gruppen
 
@@ -133,13 +133,25 @@ T-BOT, Nikolai Kloß, (Inhaltsverzeichnis)
 
 | **Als** | **möchte ich** | **so dass** | **Akzeptanz** |
 | :------ | :----- | :------ | :-------- |
-|Benutzer|
+|Benutzer|Positionen öffnen können|ich aktiv am Handel teilnehmen kann|Position wird im Wallet gelistet|
+|Benutzer|Positionen schließen können|ich Gewinne/Verluste realisieren kann|Position wird aus der Wallet entfernt|
+|Benutzer|einen selektierten BOT aktivieren können| dieser die Handelsentscheidungen für mich trifft & agiert|MessageBox:"BOT Trading ist nun aktiviert!"|
+|Benutzer|einen selektierten BOT deaktivieren können|ich die Handelsentscheidungen selber treffe & agiere|MessageBox:"BOT Trading ist nun deaktiviert"
+|Benutzer|StopLoss/TakeProfit setzen können|an den definierten Schwellwerten eine Position geschlossen wird| Position wird bei erreichen des Wertes aus dem Wallet entfernt|
+|Benutzer|eine Pending Order setzen| bei erreichen eines definierten Kurses, automatische eine Position eröffnet wird|Position erscheint bei Erfüllung der Bedingung im Wallet|
 
 **BOTs**
 
 | **Als** | **möchte ich** | **so dass** | **Akzeptanz** |
 | :------ | :----- | :------ | :-------- |
-|Benutzer|
+|Benutzer|einen BOT selektieren|ich diesen auf meinen Chart anwenden kann|In der RealtimeChartView erscheint der selektierte BOT|
+|Benutzer|einen BOT konfigurieren|ich diesen nach meinen eigenen Parametern arbeiten lassen kann|MessageBox:"Ihre Parameter wurden übernommen!"
+|Benutzer|einen BOT erwerben|ich diesen für meine Charts anwendbar machen kann|MessageBox:"Dieser BOT gehört nun Ihnen!"|
+|Benutzer|einen BOT bewerten|andere Benutzer einen Endruck, noch vor Erwerb des Bots, kriegen können|Bewertung wird nun für alle angezeigt|
+|Benutzer|einen selbst erstellten BOT veröffentlichen| dieser von anderen Benutzern verwendet werden kann| BOT wird zum Erwerb gelistet|
+|Benutzer|einen BOT erstellen|der Handel automatisiert werden kann|Der erstellte BOT steht nun zur Auswahl|
+|Benutzer|einen erstellten BOT bearbeiten| ich diesen erweitern oder verändern kann|MessageBox:"Die Änderungen wurde gespeichert!"|
+|Benutzer|Debugging-Funktionen nutzen|die Entwicklung/Fehlerbehebung eines BOTs erleichtert wird|Setzen von Breakpoints usw. möglich|
 
 # 3 Technische Beschreibung
 
