@@ -4,10 +4,10 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>510</x>
+      <x>520</x>
       <y>150</y>
-      <w>460</w>
-      <h>350</h>
+      <w>370</w>
+      <h>310</h>
     </coordinates>
     <panel_attributes>Echtzeithandel
 halign=left</panel_attributes>
@@ -16,7 +16,7 @@ halign=left</panel_attributes>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>410</x>
+      <x>420</x>
       <y>270</y>
       <w>80</w>
       <h>110</h>
@@ -27,7 +27,7 @@ halign=left</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>540</x>
+      <x>550</x>
       <y>220</y>
       <w>120</w>
       <h>40</h>
@@ -39,7 +39,7 @@ halign=left</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>540</x>
+      <x>550</x>
       <y>310</y>
       <w>120</w>
       <h>40</h>
@@ -51,7 +51,7 @@ schließen</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>740</x>
+      <x>750</x>
       <y>200</y>
       <w>120</w>
       <h>70</h>
@@ -64,7 +64,7 @@ setzen</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>540</x>
+      <x>550</x>
       <y>380</y>
       <w>130</w>
       <h>50</h>
@@ -76,7 +76,7 @@ setzen</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>460</x>
+      <x>470</x>
       <y>230</y>
       <w>100</w>
       <h>80</h>
@@ -87,7 +87,7 @@ setzen</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>460</x>
+      <x>470</x>
       <y>280</y>
       <w>100</w>
       <h>70</h>
@@ -98,7 +98,7 @@ setzen</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>460</x>
+      <x>470</x>
       <y>280</y>
       <w>100</w>
       <h>140</h>
@@ -109,7 +109,7 @@ setzen</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>650</x>
+      <x>660</x>
       <y>220</y>
       <w>110</w>
       <h>40</h>
@@ -121,7 +121,7 @@ setzen</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>590</x>
+      <x>600</x>
       <y>250</y>
       <w>90</w>
       <h>80</h>

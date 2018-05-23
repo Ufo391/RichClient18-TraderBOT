@@ -22,6 +22,8 @@ T-BOT, Nikolai Kloß, (Inhaltsverzeichnis)
     unabhängig davon, ob der Anwender die App beendet hat.
     Es werden hierzu Serverressourcen bereitgestellt.
 
+    Die Bezahlversion wird in Form eines monatlichen Abonnements realisiert.
+
     Die "PWA" Rich-Client-Applikation ist plattformunabhängig und auch im
     Webbrowser ausführbar.
 
@@ -64,6 +66,11 @@ T-BOT, Nikolai Kloß, (Inhaltsverzeichnis)
 
 ## 2.1 Funktionale Anforderungen
     - Use-Case Diagramme
+![T-BOT](UseCase/USE_CASE-Overview.png)
+![Wallet](UseCase/USE_CASE-Wallet.png)
+![Config](UseCase/USE_CASE-Config.png)
+![Realtime](UseCase/USE_CASE-Realtime.png)
+![BOTs](UseCase/USE_CASE-BOT.png)
     - Strukturierung der Diagramme in funktionale Gruppen
 
 ## 2.2 Nicht-funktionale Anforderungen
@@ -84,6 +91,7 @@ T-BOT, Nikolai Kloß, (Inhaltsverzeichnis)
 ![RegisterView](MockUps/RegisterView.png)
 ![WalletView](MockUps/WalletView.png)
 ![WalletView-Sidebar](MockUps/WalletViewSidebarMenu.png)
+![RealtimechartView](MockUps/RealtimechartView.png)
 ![HistoryView](MockUps/HistoryView.png)
 ![BOTMarketView](MockUps/BOTMarketView.png)
 ![BOTMarketView](MockUps/BOTMarketViewKaufen.png)
@@ -114,12 +122,6 @@ T-BOT, Nikolai Kloß, (Inhaltsverzeichnis)
 | **Als** | **möchte ich** | **so dass** | **Akzeptanz** |
 | :------ | :----- | :------ | :-------- |
 | Benutzer | bei Fehleingabe die Lösung angezeigt bekommen | ich lernen kann | Lösung wird angezeigt |
-
-### Beispiel 2
-
-| **Name**| **In meiner Rolle als**...|   ...**möchte ich**...   | ..., **so dass**... | **Erfüllt, wenn**... | **Priorität**   |
-|:-----|:----------:|:-------------------|:-------------|:---------|:----------------|
-| Lernen  |Benutzer| bei Fehleingabe die Lösung angezeigt bekommen|ich lernen kann| Lösung wird angezeigt | Muss |
 
 
 # 3 Technische Beschreibung
