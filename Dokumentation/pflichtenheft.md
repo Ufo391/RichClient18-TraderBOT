@@ -102,6 +102,8 @@ T-BOT, Nikolai Kloß, (Inhaltsverzeichnis)
 
 ### 2.2.3 Qualitätsmerkmale
     - Performance
+      Der Kern des Systems muss eine hohe Performanz vorweisen.
+      Dies bedeutet, dass eine geringe Input/Output-Latenz Priorität besitzt.
 
     - Sicherheit
 
