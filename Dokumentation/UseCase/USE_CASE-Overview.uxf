@@ -118,12 +118,12 @@ zurücksetzen</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>530</x>
+      <x>520</x>
       <y>320</y>
-      <w>120</w>
-      <h>40</h>
+      <w>130</w>
+      <h>50</h>
     </coordinates>
-    <panel_attributes>Wallet Verwalten</panel_attributes>
+    <panel_attributes>Wallet Verwalten+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -131,22 +131,22 @@ zurücksetzen</panel_attributes>
     <coordinates>
       <x>420</x>
       <y>330</y>
-      <w>130</w>
+      <w>120</w>
       <h>200</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>10.0;180.0;110.0;10.0</additional_attributes>
+    <additional_attributes>10.0;180.0;100.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>570</x>
-      <y>350</y>
+      <y>360</y>
       <w>90</w>
-      <h>100</h>
+      <h>90</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;includes&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
   </element>
 </diagram>

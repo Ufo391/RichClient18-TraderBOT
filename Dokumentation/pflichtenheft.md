@@ -66,17 +66,17 @@ T-BOT, Nikolai Kloß
 
 **Allgemein:**
 
-![T-BOT](UseCase/USE_CASE-Overview.png)
-![Wallet](UseCase/USE_CASE-Wallet.png)
+![T-BOT](UseCase/USE_CASE-Overview1.png)
+![Wallet](UseCase/USE_CASE-Wallet2.png)
 
 **Trading:**
 
-![Realtime](UseCase/USE_CASE-Realtime2.png)
+![Realtime](UseCase/USE_CASE-Realtime3.png)
 
 **Konfiguration:**
 
-![Config](UseCase/USE_CASE-Config2.png)
-![BOTs](UseCase/USE_CASE-BOT.png)
+![Config](UseCase/USE_CASE-Config3.png)
+![BOTs](UseCase/USE_CASE-BOT2.png)
 
 ## 2.2 Nicht-funktionale Anforderungen
 
@@ -189,7 +189,7 @@ T-BOT, Nikolai Kloß
 
 ## 3.1 Systemübersicht
     - Systemarchitekturdiagramm ("Box-And-Arrow" Diagramm)
-![](Architektur/Architekturdiagramm3.png)
+![](Architektur/Architekturdiagramm.png)
     - Schnittstellenbeschreibung
     Die MYSQL Datenbank wird als Modul in NodeJS eingebunden und benötigt somit
     keine spezielle Schnitstelle.

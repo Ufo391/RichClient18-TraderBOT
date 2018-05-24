@@ -4,8 +4,8 @@
   <element>
     <id>UMLDeployment</id>
     <coordinates>
-      <x>270</x>
-      <y>200</y>
+      <x>420</x>
+      <y>490</y>
       <w>400</w>
       <h>290</h>
     </coordinates>
@@ -15,8 +15,8 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>300</x>
-      <y>320</y>
+      <x>540</x>
+      <y>190</y>
       <w>140</w>
       <h>80</h>
     </coordinates>
@@ -28,8 +28,8 @@ Database</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>390</x>
-      <y>730</y>
+      <x>540</x>
+      <y>1020</y>
       <w>140</w>
       <h>80</h>
     </coordinates>
@@ -41,8 +41,8 @@ BOTs-Ressource</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>490</x>
-      <y>320</y>
+      <x>540</x>
+      <y>610</y>
       <w>140</w>
       <h>80</h>
     </coordinates>
@@ -54,8 +54,8 @@ Server</panel_attributes>
   <element>
     <id>UMLDeployment</id>
     <coordinates>
-      <x>830</x>
-      <y>200</y>
+      <x>980</x>
+      <y>490</y>
       <w>400</w>
       <h>290</h>
     </coordinates>
@@ -65,8 +65,8 @@ Server</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>950</x>
-      <y>310</y>
+      <x>1100</x>
+      <y>600</y>
       <w>150</w>
       <h>80</h>
     </coordinates>
@@ -77,22 +77,22 @@ Webbrowser</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>660</x>
-      <y>330</y>
+      <x>810</x>
+      <y>580</y>
       <w>190</w>
       <h>40</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-&gt;
+    <panel_attributes>lt=&lt;-
 HTTPS</panel_attributes>
     <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>240</x>
-      <y>140</y>
+      <x>390</x>
+      <y>0</y>
       <w>1020</w>
-      <h>780</h>
+      <h>1210</h>
     </coordinates>
     <panel_attributes>T-BOT architecture diagram
 --
@@ -103,8 +103,8 @@ layer=-1</panel_attributes>
   <element>
     <id>UMLDeployment</id>
     <coordinates>
-      <x>270</x>
-      <y>610</y>
+      <x>420</x>
+      <y>900</y>
       <w>400</w>
       <h>290</h>
     </coordinates>
@@ -115,13 +115,48 @@ layer=0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>460</x>
-      <y>480</y>
-      <w>60</w>
+      <x>610</x>
+      <y>770</y>
+      <w>100</w>
       <h>150</h>
     </coordinates>
     <panel_attributes>lt=&lt;-&gt;
-REST</panel_attributes>
+Websocket</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>810</x>
+      <y>660</y>
+      <w>190</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+Websocket</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>420</x>
+      <y>80</y>
+      <w>400</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>Database</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>610</x>
+      <y>360</y>
+      <w>100</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Websocket</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
   </element>
 </diagram>
