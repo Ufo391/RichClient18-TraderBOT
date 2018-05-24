@@ -101,12 +101,22 @@ T-BOT, Nikolai Kloß
     - Performance
       Der Kern des Systems muss eine hohe Performanz vorweisen.
       Dies bedeutet, dass eine geringe Input/Output-Latenz Priorität besitzt.
+      Ziel ist es, dass auf Ereignisse, möglichst Zeitnah eine Aktion folgt.
 
     - Sicherheit
+      Die Kommunikation zwischen den Prozessen ist verschlüsselt.
+      Der Client greift ausschließlich auf den Website-NodeJS-Server zu.
+      Alle anderen Systemelemente liegen extra gekapselt hinter dem Website-NodeJS-Server und können auch nur von diesem kontaktiert werden.      
+      Ressourcen-Server: muss "Ressourcen-Verschwender" erkennen und deren
+      Ausführung unterbinden (bösartige Implementierungen die den Server zum Absturz bringen können z.B. while(true) Schleifen)
 
     - Zuverlässigkeit
+      Ressourcen-Server: muss bei Ausfall automatisch neustarten
+      MySQL-Server: alle 12h wird ein Datenbank-BackUp angelegt
 
     - Benutzerfreundlichkeit
+      Die Views basieren auf dem "Adaptiv-Design" Layout um auf diversen Clients
+      möglichst benutzerfreundlich dargestellt zu werden.
 
 
 ## 2.3 Graphische Benutzerschnittstelle
