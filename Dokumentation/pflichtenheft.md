@@ -155,8 +155,19 @@ T-BOT, Nikolai Kloß, (Inhaltsverzeichnis)
 
 ## 3.1 Systemübersicht
     - Systemarchitekturdiagramm ("Box-And-Arrow" Diagramm)
+![](Architektur/Architekturdiagramm3.png)
     - Schnittstellenbeschreibung
-    - Kommunikationsprotokolle, Datenformate
+    Die MYSQL Datenbank wird als Modul in NodeJS eingebunden und benötigt somit
+    keine spezielle Schnitstelle.
+
+    - Kommunikationsprotokolle
+    Zur Kommunikation zwischen Serverside und Clientside kommt HTTPS zum Einsatz.
+    Um zwischen Ressourcen und Serverside zu kommunizieren wird das REST Pattern
+    eingesetzt.
+
+    - Datenformate
+    Zur Datenhaltung verwendet das System eine relationale MYSQL Datenbank.
+
 
 ## 3.2 Softwarearchitektur
     - Darstellung von Softwarebausteinen (Module, Schichten, Komponenten)
