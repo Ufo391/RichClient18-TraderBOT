@@ -1,6 +1,6 @@
 # Anforderungs- und Entwurfsspezifikation ("Pflichtenheft")
 
-T-BOT, Nikolai Kloß, (Inhaltsverzeichnis)
+T-BOT, Nikolai Kloß
 
 # 1 Einführung
 
@@ -44,9 +44,6 @@ T-BOT, Nikolai Kloß, (Inhaltsverzeichnis)
           * BOTs lassen sich vom Anwender erstellen
           * BOTs lassen sich vom Ersteller käuflich vertreiben   
           * BOTs lassen sich von Anwendern bewerten
-
-    - Marktanforderungen:
-          * Echtzeitanforderung, stabile Applikation, pflegende Community
 
     - Alleinstellungsmerkmale:
           * Automatisierter Handel ist erweiterbar
