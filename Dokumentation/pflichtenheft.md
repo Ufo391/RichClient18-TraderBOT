@@ -50,7 +50,7 @@ T-BOT, Nikolai Kloß, (Inhaltsverzeichnis)
 
     - Alleinstellungsmerkmale:
           * Automatisierter Handel ist erweiterbar
-          * Die Applikation ist für den Anwender kostenlos   
+          * Die Applikation ist für den Anwender wahlweise kostenlos   
 
     - Zielbenutzergruppen:
           * Gute Kenntnisse in IT-technischen Zusammenhängen
@@ -66,24 +66,49 @@ T-BOT, Nikolai Kloß, (Inhaltsverzeichnis)
 
 ## 2.1 Funktionale Anforderungen
     - Use-Case Diagramme
+
+**Allgemein:**
+
 ![T-BOT](UseCase/USE_CASE-Overview.png)
 ![Wallet](UseCase/USE_CASE-Wallet.png)
-![Config](UseCase/USE_CASE-Config2.png)
-![Realtime](UseCase/USE_CASE-Realtime2.png)
-![BOTs](UseCase/USE_CASE-BOT.png)
 
-    - Strukturierung der Diagramme in funktionale Gruppen
+**Trading:**
+
+![Realtime](UseCase/USE_CASE-Realtime2.png)
+
+**Konfiguration:**
+
+![Config](UseCase/USE_CASE-Config2.png)
+![BOTs](UseCase/USE_CASE-BOT.png)
 
 ## 2.2 Nicht-funktionale Anforderungen
 
 ### 2.2.1 Rahmenbedingungen
-    - Normen, Standards, Protokolle, Hardware, externe Vorgaben
+
+    Mindestens ein Handelskonto bei einen der unterstützten Handelsplattformen
+    führen.
 
 ### 2.2.2 Betriebsbedingungen
-    - Vorgaben des Kunden (z.B. Web Browser / Betriebssystem Versionen, Programmiersprache)
+    -   Betriebsbedingungen ist ein internetfähiges Endgerät, welches in der
+        Lage ist die folgenden HTTPS/Webbrowser auszuführen.
+
+        Unterstützte Webbrowser:
+        ab Internet Explorer 9.0.8112.16421  
+        ab Mozilla Firefox 10.0
+        ab Opera 11.10
+        ab Google Chrome 10.0
+
+        Eine schnelle Internetverbindung wird empfohlen.
 
 ### 2.2.3 Qualitätsmerkmale
-    - Externe Qualitätsanforderungen (z.B. Performance, Sicherheit, Zuverlässigkeit, Benutzerfreundlichkeit)
+    - Performance
+
+    - Sicherheit
+
+    - Zuverlässigkeit
+
+    - Benutzerfreundlichkeit
+
 
 ## 2.3 Graphische Benutzerschnittstelle
     - GUI-Mockups passend zu User Stories
