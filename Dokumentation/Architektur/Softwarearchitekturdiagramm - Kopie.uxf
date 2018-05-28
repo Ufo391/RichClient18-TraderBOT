@@ -162,19 +162,7 @@ halign=center</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>623</x>
-      <y>224</y>
-      <w>245</w>
-      <h>70</h>
-    </coordinates>
-    <panel_attributes>MySQL
-halign=left</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>714</x>
+      <x>637</x>
       <y>238</y>
       <w>70</w>
       <h>42</h>
@@ -412,6 +400,18 @@ halign=center</panel_attributes>
 Market API
 Translator
 halign=center</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>623</x>
+      <y>224</y>
+      <w>245</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+NodeJS</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
