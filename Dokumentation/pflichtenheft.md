@@ -1,11 +1,11 @@
 # Anforderungs- und Entwurfsspezifikation ("Pflichtenheft")
 
-T-BOT, Nikolai Kloß
+Trader-BOT, Nikolai Kloß
 
 # 1 Einführung
 
 ## 1.1 Beschreibung
-    Bei "T-BOT" handelt es sich um einen automatisierten Händler für
+    Bei Trader-BOT (kurz: "T-BOT") handelt es sich um einen automatisierten Händler für
     Kryptowährungen. Die progressive-Web-App ist in der Lage, Depot's/Wallets
     diverser Handelsplattformen zu verwalten und Positionen an den jeweiligen
     Märkten zu öffnen/schließen. Dem Benutzer steht es hierbei offen,
@@ -13,12 +13,12 @@ T-BOT, Nikolai Kloß
     auch käuflich erwerbaren Handelsalgorithmen zu überlassen.
 
     Die Handelsalgorithmen (BOTs) lassen sich vom Anwender selbst erstellen.
-    Die BOTs können für den eigenen Gebrauch eingeschränkt werden, oder aber
-    auch publiziert zur freien Verfügung stehen, oder für Geld angeboten werden.
+    Die BOTs können für den eigenen Gebrauch eingeschränkt, publiziert zur 
+    freien Verfügung stehen, oder für Geld angeboten werden.
 
     Die Applikation liegt in 2 Varianten vor. T-BOT kann
     kostenlos verwendet werden. Die Bezahlversion beinhaltet
-    das Feature, dass der eingesetzte BOT 24/7 handelt,
+    das Feature, dass der eingesetzte BOT rund um die Uhr handelt,
     unabhängig davon, ob der Anwender die App beendet hat.
     Es werden hierzu Serverressourcen bereitgestellt.
 
@@ -82,11 +82,11 @@ T-BOT, Nikolai Kloß
 
 ### 2.2.1 Rahmenbedingungen
 
-    Mindestens ein Handelskonto bei einen der unterstützten Handelsplattformen
-    führen.
+    -   Mindestens ein Handelskonto bei einen der unterstützten Handelsplattformen
+        führen.
 
 ### 2.2.2 Betriebsbedingungen
-    -   Betriebsbedingungen ist ein internetfähiges Endgerät, welches in der
+    -   Betriebsbedingung ist ein internetfähiges Endgerät, welches in der
         Lage ist die folgenden HTTPS/Webbrowser auszuführen.
 
         Unterstützte Webbrowser:
@@ -104,7 +104,7 @@ T-BOT, Nikolai Kloß
           Ziel ist es, dass auf Ereignisse, möglichst Zeitnah eine Aktion folgt.
 
     - Sicherheit
-          Die Kommunikation zwischen den Prozessen ist verschlüsselt.
+          Die Kommunikation zwischen den Architekturkomponenten ist verschlüsselt.
           Der Client greift ausschließlich auf den Website-NodeJS-Server zu.
           Alle anderen Systemelemente liegen extra gekapselt hinter dem 
           Website-NodeJS-Server und können auch nur von diesem kontaktiert werden.      
