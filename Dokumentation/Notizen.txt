@@ -1,8 +1,7 @@
-*Datenformate z.B. JSON
 *3.2 Softwarearchitektur - Darstellung von Softwarebausteinen (konkrete Module bennenn z.B. MYSQL Modul oder MQL-C# Bridge)
 *3.3 Datenmodell - Analysenklassendiagramm und ER-Diagramm
-*3.4 Optional
 *3.5 Alle verwendeten Tools auflisten (z.B. Visual Studio Code Version x)
 
 *react D3 zur Chartdarstellung
 *react SemanticUI  für Views
+*Socket IO für Socket Kommunikation

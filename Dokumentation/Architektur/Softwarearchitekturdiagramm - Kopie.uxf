@@ -4,8 +4,8 @@
   <element>
     <id>UMLDeployment</id>
     <coordinates>
-      <x>392</x>
-      <y>392</y>
+      <x>357</x>
+      <y>385</y>
       <w>280</w>
       <h>203</h>
     </coordinates>
@@ -15,47 +15,20 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>476</x>
-      <y>182</y>
-      <w>98</w>
-      <h>56</h>
+      <x>371</x>
+      <y>126</y>
+      <w>245</w>
+      <h>91</h>
     </coordinates>
     <panel_attributes>symbol=component
-MYSQL
-Database</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>476</x>
-      <y>763</y>
-      <w>98</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>symbol=component
-NodeJS
-BOTs-Ressource</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>476</x>
-      <y>476</y>
-      <w>98</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>symbol=component
-NodeJS
-Server</panel_attributes>
+NodeJS</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLDeployment</id>
     <coordinates>
-      <x>784</x>
-      <y>392</y>
+      <x>749</x>
+      <y>385</y>
       <w>280</w>
       <h>203</h>
     </coordinates>
@@ -63,22 +36,10 @@ Server</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>868</x>
-      <y>469</y>
-      <w>105</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>symbol=component
-Webbrowser</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>Relation</id>
     <coordinates>
-      <x>665</x>
-      <y>455</y>
+      <x>630</x>
+      <y>448</y>
       <w>133</w>
       <h>28</h>
     </coordinates>
@@ -89,8 +50,8 @@ HTTPS</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>371</x>
-      <y>49</y>
+      <x>336</x>
+      <y>42</y>
       <w>714</w>
       <h>847</h>
     </coordinates>
@@ -103,8 +64,8 @@ layer=-1</panel_attributes>
   <element>
     <id>UMLDeployment</id>
     <coordinates>
-      <x>392</x>
-      <y>679</y>
+      <x>357</x>
+      <y>672</y>
       <w>280</w>
       <h>203</h>
     </coordinates>
@@ -115,8 +76,8 @@ layer=0</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>525</x>
-      <y>588</y>
+      <x>490</x>
+      <y>581</y>
       <w>70</w>
       <h>105</h>
     </coordinates>
@@ -127,8 +88,8 @@ Websocket</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>665</x>
-      <y>511</y>
+      <x>630</x>
+      <y>504</y>
       <w>133</w>
       <h>28</h>
     </coordinates>
@@ -139,8 +100,8 @@ Websocket</panel_attributes>
   <element>
     <id>UMLDeployment</id>
     <coordinates>
-      <x>392</x>
-      <y>105</y>
+      <x>357</x>
+      <y>98</y>
       <w>280</w>
       <h>203</h>
     </coordinates>
@@ -150,13 +111,245 @@ Websocket</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>525</x>
-      <y>301</y>
+      <x>490</x>
+      <y>294</y>
       <w>70</w>
       <h>105</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 Websocket</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>378</x>
+      <y>161</y>
+      <w>70</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>
+mysql
+halign=center</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>539</x>
+      <y>161</y>
+      <w>70</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>
+Websocket.IO
+halign=center</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>462</x>
+      <y>161</y>
+      <w>70</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>
+business logic
+halign=center</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>371</x>
+      <y>224</y>
+      <w>245</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>MySQL
+halign=left</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>462</x>
+      <y>238</y>
+      <w>70</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>
+DBMS
+halign=center</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>371</x>
+      <y>420</y>
+      <w>245</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+NodeJS</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>371</x>
+      <y>707</y>
+      <w>245</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+NodeJS</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>763</x>
+      <y>420</y>
+      <w>245</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+React</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>539</x>
+      <y>476</y>
+      <w>70</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>
+Websocket.IO
+halign=center</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>378</x>
+      <y>476</y>
+      <w>70</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>
+Express
+halign=center</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>462</x>
+      <y>476</y>
+      <w>70</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>
+business logic
+halign=center</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>518</x>
+      <y>770</y>
+      <w>70</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>
+Websocket.IO
+halign=center</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>406</x>
+      <y>770</y>
+      <w>70</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>
+business logic
+halign=center</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>770</x>
+      <y>448</y>
+      <w>70</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>
+React D3
+halign=center</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>770</x>
+      <y>497</y>
+      <w>70</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>
+Semantic UI
+React
+halign=center</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>910</x>
+      <y>448</y>
+      <w>84</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>
+react-websocket
+halign=center</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>847</x>
+      <y>497</y>
+      <w>70</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>
+business logic
+halign=center</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>924</x>
+      <y>497</y>
+      <w>70</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>
+React-https-
+redirect
+halign=center</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>

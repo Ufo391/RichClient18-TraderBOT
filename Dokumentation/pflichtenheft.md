@@ -269,6 +269,8 @@ T-BOT, Nikolai Kloß
 ## 3.2 Softwarearchitektur
     - Darstellung von Softwarebausteinen (Module, Schichten, Komponenten)
 
+![](Architektur/Softwarearchitekturdiagramm.png)
+
 ## 3.3 Datenmodell
     - Konzeptionelles Analyseklassendiagramm
 
