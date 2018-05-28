@@ -196,7 +196,7 @@ T-BOT, Nikolai Kloß
 
 ## 3.1 Systemübersicht
     - Systemarchitekturdiagramm ("Box-And-Arrow" Diagramm)
-![](Architektur/Architekturdiagramm.png)
+![](Architektur/Architekturdiagramm1.png)
     - Schnittstellenbeschreibung
 
       [Clientside]:
@@ -237,6 +237,12 @@ T-BOT, Nikolai Kloß
 
           Route: für Versand von Anfragen
 
+        REST: Sender - für Kommunikation zu Market
+
+          Route: für Orderausführung am Market
+          Route: für Authentifizierung am Market
+          Route: für Status am Market (z.B. Positionen)
+
       [Ressources]:
 
         Websocket: Bidirektional - für Kommunikation zu Ressources
@@ -261,6 +267,9 @@ T-BOT, Nikolai Kloß
       Websocket: ermöglicht die Benachrichtungen zwischen Clientside,
       Serverside und Ressources.
 
+      REST: dient der Kommunikation zum Market um beispielsweise eine Order
+      zu positionieren.
+
 
     - Datenformate
       JSON: zur Übertragung von Nachrichten.
@@ -269,7 +278,7 @@ T-BOT, Nikolai Kloß
 ## 3.2 Softwarearchitektur
     - Darstellung von Softwarebausteinen (Module, Schichten, Komponenten)
 
-![](Architektur/Softwarearchitekturdiagramm.png)
+![](Architektur/Softwarearchitekturdiagramm1.png)
 
 ## 3.3 Datenmodell
     - Konzeptionelles Analyseklassendiagramm
@@ -284,17 +293,26 @@ T-BOT, Nikolai Kloß
 # 4 Projektorganisation
 
 ## 4.1 Annahmen
-    - Nicht durch den Kunden definierte spezifische Annahmen, Anforderungen und Abhängigkeiten
     - Verwendete Technologien (Programmiersprache, Frameworks, etc.)
-    - Einschränkungen, Betriebsbedingungen und Faktoren, die die Entwicklung beeinflussen (Betriebssysteme, Entwicklungsumgebung)
-    - Interne Qualitätsanforderungen (z.B. Softwarequalitätsmerkmale wie z.B. Erweiterbarkeit)
+
+      Programmiersprachen:
+        JavaScript, MySQL, HTML, CSS
+
+      Frameworks:
+        React, NodeJS
+
+      Testframeworks:
+        Mocha, Chai, Sinon.js
 
 ## 4.2 Verantwortlichkeiten
-    - Zuordnung von Personen zu Softwarebausteinen aus Kapitel 3.1 und 3.2
-    - Rollendefinition und Zuordnung
+    - Nikolai Kloß: Zuordnung von allen Rollen und Softwarebausteinen
 
 ## 4.3 Grober Projektplan
     - Meilensteine
+
+| **Aufgabe** | **Start** | **Ende** |
+| :------ | :----- | :------ |
+
 
 # 5 Anhänge
 
