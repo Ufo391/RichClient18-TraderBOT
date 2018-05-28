@@ -13,7 +13,7 @@ Trader-BOT, Nikolai Kloß
     auch käuflich erwerbaren Handelsalgorithmen zu überlassen.
 
     Die Handelsalgorithmen (BOTs) lassen sich vom Anwender selbst erstellen.
-    Die BOTs können für den eigenen Gebrauch eingeschränkt, publiziert zur 
+    Die BOTs können für den eigenen Gebrauch eingeschränkt, publiziert zur
     freien Verfügung stehen, oder für Geld angeboten werden.
 
     Die Applikation liegt in 2 Varianten vor. T-BOT kann
@@ -106,11 +106,11 @@ Trader-BOT, Nikolai Kloß
     - Sicherheit
           Die Kommunikation zwischen den Architekturkomponenten ist verschlüsselt.
           Der Client greift ausschließlich auf den Website-NodeJS-Server zu.
-          Alle anderen Systemelemente liegen extra gekapselt hinter dem 
+          Alle anderen Systemelemente liegen extra gekapselt hinter dem
           Website-NodeJS-Server und können auch nur von diesem kontaktiert werden.      
-      
+
           Ressourcen-Server: muss "Ressourcen-Verschwender" erkennen und deren
-          Ausführung unterbinden (bösartige Implementierungen die den Server zum 
+          Ausführung unterbinden (bösartige Implementierungen die den Server zum
           Absturz bringen können z.B. while(true) Schleifen)
 
     - Zuverlässigkeit
@@ -281,7 +281,7 @@ Trader-BOT, Nikolai Kloß
 ## 3.2 Softwarearchitektur
     - Darstellung von Softwarebausteinen (Module, Schichten, Komponenten)
 
-![](Architektur/Softwarearchitekturdiagramm.png)
+![](Architektur/Softwarearchitekturdiagramm1.png)
 
 ## 3.3 Datenmodell
     - Konzeptionelles Analyseklassendiagramm
