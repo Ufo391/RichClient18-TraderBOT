@@ -263,7 +263,7 @@ halign=center</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>770</x>
-      <y>770</y>
+      <y>749</y>
       <w>70</w>
       <h>42</h>
     </coordinates>
@@ -276,7 +276,7 @@ halign=center</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>658</x>
-      <y>770</y>
+      <y>749</y>
       <w>70</w>
       <h>42</h>
     </coordinates>
@@ -391,12 +391,26 @@ REST-API</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>714</x>
-      <y>525</y>
+      <y>805</y>
       <w>70</w>
       <h>42</h>
     </coordinates>
     <panel_attributes>
 MQL Bridge
+halign=center</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>714</x>
+      <y>525</y>
+      <w>70</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>
+Market API
+Translator
 halign=center</panel_attributes>
     <additional_attributes/>
   </element>
