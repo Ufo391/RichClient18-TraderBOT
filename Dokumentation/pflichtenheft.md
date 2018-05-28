@@ -264,18 +264,18 @@ T-BOT, Nikolai Kloß
 
     - Kommunikationsprotokolle
 
-      HTTPS: dient zur verschlüsselten Kommunikation, bei dem ausschließlich
-      die Clientside den Nachrichtenaustausch zum Serverside startet.
+        HTTPS: dient zur verschlüsselten Kommunikation, bei dem ausschließlich
+        die Clientside den Nachrichtenaustausch zum Serverside startet.
 
-      Websocket: ermöglicht die Benachrichtungen zwischen Clientside,
-      Serverside und Ressources.
+        Websocket: ermöglicht die Benachrichtungen zwischen Clientside,
+        Serverside und Ressources.
 
-      REST: dient der Kommunikation zum Market um beispielsweise eine Order
-      zu positionieren.
+        REST: dient der Kommunikation zum Market um beispielsweise eine Order
+        zu positionieren.
 
 
     - Datenformate
-      JSON: zur Übertragung von Nachrichten.
+        JSON: zur Übertragung von Nachrichten.
 
 
 ## 3.2 Softwarearchitektur
