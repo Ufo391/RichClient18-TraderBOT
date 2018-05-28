@@ -278,7 +278,7 @@ T-BOT, Nikolai Kloß
 ## 3.2 Softwarearchitektur
     - Darstellung von Softwarebausteinen (Module, Schichten, Komponenten)
 
-![](Architektur/Softwarearchitekturdiagramm1.png)
+![](Architektur/Softwarearchitekturdiagramm.png)
 
 ## 3.3 Datenmodell
     - Konzeptionelles Analyseklassendiagramm
@@ -298,6 +298,9 @@ T-BOT, Nikolai Kloß
       Programmiersprachen:
         JavaScript, MySQL, HTML, CSS
 
+        Pattern:
+        REST
+
       Frameworks:
         React, NodeJS
 
@@ -305,14 +308,22 @@ T-BOT, Nikolai Kloß
         Mocha, Chai, Sinon.js
 
 ## 4.2 Verantwortlichkeiten
-    - Nikolai Kloß: Zuordnung von allen Rollen und Softwarebausteinen
+    - Nikolai Kloß: zuständig für alle Rollen und Softwarebausteine.
 
 ## 4.3 Grober Projektplan
     - Meilensteine
 
 | **Aufgabe** | **Start** | **Ende** |
 | :------ | :----- | :------ |
-
+|Einrichtung der VM-Entwicklungsumgebung|KW22|KW22|
+|Einrichtung der DBMS|KW22|KW22|
+|Primitive Schnitstellenkommunikation zwischen Architekturkomponenten implementieren|KW22|KW23|
+|Tests implementieren|KW22|KW27|
+|Erweiterte  Schnitstellenkommunikation zwischen Architekturkomponenten implementieren|KW23|KW25|
+|Geschäftslogik - "Database" implementieren|KW23|KW24|
+|Geschäftslogik - "Serverside" implementieren|KW24|KW25|
+|Geschäftslogik - "Ressources" implementieren|KW24|KW25|
+|Geschäftslogik - "Clientside" implementieren|KW26|KW27|
 
 # 5 Anhänge
 

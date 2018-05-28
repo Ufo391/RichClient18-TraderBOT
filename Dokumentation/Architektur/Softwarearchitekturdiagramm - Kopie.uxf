@@ -387,4 +387,17 @@ REST</panel_attributes>
 REST-API</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>714</x>
+      <y>525</y>
+      <w>70</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>
+MQL Bridge
+halign=center</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
