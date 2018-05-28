@@ -196,7 +196,7 @@ T-BOT, Nikolai Kloß
 
 ## 3.1 Systemübersicht
     - Systemarchitekturdiagramm ("Box-And-Arrow" Diagramm)
-![](Architektur/Architekturdiagramm1.png)
+![](Architektur/Architekturdiagramm.png)
     - Schnittstellenbeschreibung
 
       [Clientside]:
@@ -263,7 +263,7 @@ T-BOT, Nikolai Kloß
 
 
     - Datenformate
-      JSON: zur Übertragung von Nachrichten. 
+      JSON: zur Übertragung von Nachrichten.
 
 
 ## 3.2 Softwarearchitektur

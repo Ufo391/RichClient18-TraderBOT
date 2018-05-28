@@ -13,6 +13,45 @@
     <additional_attributes/>
   </element>
   <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>476</x>
+      <y>182</y>
+      <w>98</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+MYSQL
+Database</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>476</x>
+      <y>763</y>
+      <w>98</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+NodeJS
+BOTs-Ressource</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>476</x>
+      <y>476</y>
+      <w>98</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+NodeJS
+Server</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
     <id>UMLDeployment</id>
     <coordinates>
       <x>784</x>
@@ -21,6 +60,18 @@
       <h>203</h>
     </coordinates>
     <panel_attributes>Clientside</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>868</x>
+      <y>469</y>
+      <w>105</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+Webbrowser</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
