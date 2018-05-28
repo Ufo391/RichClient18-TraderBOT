@@ -122,28 +122,28 @@ T-BOT, Nikolai Kloß
 ## 2.3 Graphische Benutzerschnittstelle
     - GUI-Mockups passend zu User Stories
 
-![mockup](Mockups/RegisterView.png)
-![mockup](Mockups/LoginView.png)
-![mockup](Mockups/WalletView.png)
-![mockup](Mockups/WalletViewSidebarMenu.png)
-![mockup](Mockups/WalletViewClosePosition.png)
-![mockup](Mockups/RealtimeChartView.png)
-![mockup](Mockups/RealtimeChartViewPosition.png)
-![mockup](Mockups/BOTsView.png)
-![mockup](Mockups/BOTsViewPopUpMenu.png)
-![mockup](Mockups/BOTSettingsView.png)
-![mockup](Mockups/BOTsRatingView.png)
-![mockup](Mockups/AppSettings.png)
-![mockup](Mockups/HistoryView1.png)
-![mockup](Mockups/PaymentView.png)
-![mockup](Mockups/StrategyEditorView.png)
-![mockup](Mockups/StrategyEditorView-Code.png)
-![mockup](Mockups/StrategyEditorView-Debug.png)
-![mockup](Mockups/StrategyEditorView-Options.png)
+![mockup](MockUps/RegisterView.png)
+![mockup](MockUps/LoginView.png)
+![mockup](MockUps/WalletView.png)
+![mockup](MockUps/WalletViewSidebarMenu.png)
+![mockup](MockUps/WalletViewClosePosition.png)
+![mockup](MockUps/RealtimeChartView.png)
+![mockup](MockUps/RealtimeChartViewPosition.png)
+![mockup](MockUps/BOTsView.png)
+![mockup](MockUps/BOTsViewPopUpMenu.png)
+![mockup](MockUps/BOTSettingsView.png)
+![mockup](MockUps/BOTsRatingView.png)
+![mockup](MockUps/AppSettings.png)
+![mockup](MockUps/HistoryView1.png)
+![mockup](MockUps/PaymentView.png)
+![mockup](MockUps/StrategyEditorView.png)
+![mockup](MockUps/StrategyEditorView-Code.png)
+![mockup](MockUps/StrategyEditorView-Debug.png)
+![mockup](MockUps/StrategyEditorView-Options.png)
 
 
     - Modellierung der Navigation zwischen den Screens der GUI-Mockups als Zustandsdiagramm
-![Navigation](MockUps/Mockups_Statediagram.png)
+![Navigation](MockUps/MockUps_Statediagram.png)
 
 ## 2.4 Anforderungen im Detail
     - User Stories mit Akzeptanzkritierien
