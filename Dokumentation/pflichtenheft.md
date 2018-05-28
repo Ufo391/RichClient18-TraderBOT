@@ -1,11 +1,11 @@
 # Anforderungs- und Entwurfsspezifikation ("Pflichtenheft")
 
-T-BOT, Nikolai Kloß
+Trader-BOT, Nikolai Kloß
 
 # 1 Einführung
 
 ## 1.1 Beschreibung
-    Bei "T-BOT" handelt es sich um einen automatisierten Händler für
+    Bei Trader-BOT (kurz: "T-BOT") handelt es sich um einen automatisierten Händler für
     Kryptowährungen. Die progressive-Web-App ist in der Lage, Depot's/Wallets
     diverser Handelsplattformen zu verwalten und Positionen an den jeweiligen
     Märkten zu öffnen/schließen. Dem Benutzer steht es hierbei offen,
@@ -13,12 +13,12 @@ T-BOT, Nikolai Kloß
     auch käuflich erwerbaren Handelsalgorithmen zu überlassen.
 
     Die Handelsalgorithmen (BOTs) lassen sich vom Anwender selbst erstellen.
-    Die BOTs können für den eigenen Gebrauch eingeschränkt werden, oder aber
-    auch publiziert zur freien Verfügung stehen, oder für Geld angeboten werden.
+    Die BOTs können für den eigenen Gebrauch eingeschränkt, publiziert zur 
+    freien Verfügung stehen, oder für Geld angeboten werden.
 
     Die Applikation liegt in 2 Varianten vor. T-BOT kann
     kostenlos verwendet werden. Die Bezahlversion beinhaltet
-    das Feature, dass der eingesetzte BOT 24/7 handelt,
+    das Feature, dass der eingesetzte BOT rund um die Uhr handelt,
     unabhängig davon, ob der Anwender die App beendet hat.
     Es werden hierzu Serverressourcen bereitgestellt.
 
@@ -82,68 +82,71 @@ T-BOT, Nikolai Kloß
 
 ### 2.2.1 Rahmenbedingungen
 
-    Mindestens ein Handelskonto bei einen der unterstützten Handelsplattformen
-    führen.
+    -   Mindestens ein Handelskonto bei einen der unterstützten Handelsplattformen
+        führen.
 
 ### 2.2.2 Betriebsbedingungen
-    -   Betriebsbedingungen ist ein internetfähiges Endgerät, welches in der
+    -   Betriebsbedingung ist ein internetfähiges Endgerät, welches in der
         Lage ist die folgenden HTTPS/Webbrowser auszuführen.
 
         Unterstützte Webbrowser:
-        ab Internet Explorer 9.0.8112.16421  
-        ab Mozilla Firefox 10.0
-        ab Opera 11.10
-        ab Google Chrome 10.0
+            ab Internet Explorer 9.0.8112.16421  
+            ab Mozilla Firefox 10.0
+            ab Opera 11.10
+            ab Google Chrome 10.0
 
-        Eine schnelle Internetverbindung wird empfohlen.
+            Eine schnelle Internetverbindung wird empfohlen.
 
 ### 2.2.3 Qualitätsmerkmale
     - Performance
-      Der Kern des Systems muss eine hohe Performanz vorweisen.
-      Dies bedeutet, dass eine geringe Input/Output-Latenz Priorität besitzt.
-      Ziel ist es, dass auf Ereignisse, möglichst Zeitnah eine Aktion folgt.
+          Der Kern des Systems muss eine hohe Performanz vorweisen.
+          Dies bedeutet, dass eine geringe Input/Output-Latenz Priorität besitzt.
+          Ziel ist es, dass auf Ereignisse, möglichst Zeitnah eine Aktion folgt.
 
     - Sicherheit
-      Die Kommunikation zwischen den Prozessen ist verschlüsselt.
-      Der Client greift ausschließlich auf den Website-NodeJS-Server zu.
-      Alle anderen Systemelemente liegen extra gekapselt hinter dem Website-NodeJS-Server und können auch nur von diesem kontaktiert werden.      
-      Ressourcen-Server: muss "Ressourcen-Verschwender" erkennen und deren
-      Ausführung unterbinden (bösartige Implementierungen die den Server zum Absturz bringen können z.B. while(true) Schleifen)
+          Die Kommunikation zwischen den Architekturkomponenten ist verschlüsselt.
+          Der Client greift ausschließlich auf den Website-NodeJS-Server zu.
+          Alle anderen Systemelemente liegen extra gekapselt hinter dem 
+          Website-NodeJS-Server und können auch nur von diesem kontaktiert werden.      
+      
+          Ressourcen-Server: muss "Ressourcen-Verschwender" erkennen und deren
+          Ausführung unterbinden (bösartige Implementierungen die den Server zum 
+          Absturz bringen können z.B. while(true) Schleifen)
 
     - Zuverlässigkeit
-      Ressourcen-Server: muss bei Ausfall automatisch neustarten
-      MySQL-Server: alle 12h wird ein Datenbank-BackUp angelegt
+          Ressourcen-Server: muss bei Ausfall automatisch neustarten
+          MySQL-Server: alle 12h wird ein Datenbank-BackUp angelegt
 
     - Benutzerfreundlichkeit
-      Die Views basieren auf dem "Adaptiv-Design" Layout um auf diversen Clients
-      möglichst benutzerfreundlich dargestellt zu werden.
+          Die Views basieren auf dem "Adaptiv-Design" Layout um auf diversen Clients
+          möglichst benutzerfreundlich dargestellt zu werden.
 
 
 ## 2.3 Graphische Benutzerschnittstelle
     - GUI-Mockups passend zu User Stories
 
-![](Mockups/RegisterView.png)
-![](Mockups/LoginView.png)
-![](Mockups/WalletView.png)
-![](Mockups/WalletViewSidebarMenu.png)
-![](Mockups/WalletViewClosePosition.png)
-![](Mockups/RealtimeChartView.png)
-![](Mockups/RealtimeChartViewPosition.png)
-![](Mockups/BOTsView.png)
-![](Mockups/BOTsViewPopUpMenu.png)
-![](Mockups/BOTSettingsView.png)
-![](Mockups/BOTsRatingView.png)
-![](Mockups/AppSettings.png)
-![](Mockups/HistoryView1.png)
-![](Mockups/PaymentView.png)
-![](Mockups/StrategyEditorView.png)
-![](Mockups/StrategyEditorView-Code.png)
-![](Mockups/StrategyEditorView-Debug.png)
-![](Mockups/StrategyEditorView-Options.png)
+![mockup](MockUps/RegisterView.png)
+![mockup](MockUps/LoginView.png)
+![mockup](MockUps/WalletView.png)
+![mockup](MockUps/WalletViewSidebarMenu.png)
+![mockup](MockUps/WalletViewClosePosition.png)
+![mockup](MockUps/RealtimeChartView.png)
+![mockup](MockUps/RealtimeChartViewPosition.png)
+![mockup](MockUps/BOTsView.png)
+![mockup](MockUps/BOTsViewPopUpMenu.png)
+![mockup](MockUps/BOTSettingsView.png)
+![mockup](MockUps/BOTsRatingView.png)
+![mockup](MockUps/AppSettings.png)
+![mockup](MockUps/HistoryView1.png)
+![mockup](MockUps/PaymentView.png)
+![mockup](MockUps/StrategyEditorView.png)
+![mockup](MockUps/StrategyEditorView-Code.png)
+![mockup](MockUps/StrategyEditorView-Debug.png)
+![mockup](MockUps/StrategyEditorView-Options.png)
 
 
     - Modellierung der Navigation zwischen den Screens der GUI-Mockups als Zustandsdiagramm
-![Navigation](MockUps/Mockups_Statediagram.png)
+![Navigation](MockUps/MockUps_Statediagram.png)
 
 ## 2.4 Anforderungen im Detail
     - User Stories mit Akzeptanzkritierien
@@ -153,7 +156,7 @@ T-BOT, Nikolai Kloß
 **Allgemein:**
 
 | **Als** | **möchte ich** | **so dass** | **Akzeptanz** | **Priorität** |
-| :------ | :----- | :------ | :-------- |
+| :------ | :----- | :------ | :-------- | :-------- |
 | Benutzer| mich im System registrieren|ich mich anmelden kann|Anmeldung möglich|Must|
 |Benutzer|mich im System anmelden|ich das System nutzen kann|Abmeldung möglich|Must|
 |Benutzer|mich vom System abmelden|ich Sessions auf fremden Clients beenden kann|MessageBox: "Sie sind nun ausgeloggt"|Must|
@@ -162,7 +165,7 @@ T-BOT, Nikolai Kloß
 **Konfiguration**
 
 | **Als** | **möchte ich** | **so dass** | **Akzeptanz** | **Priorität** |
-| :------ | :----- | :------ | :-------- |
+| :------ | :----- | :------ | :-------- | :-------- |
 |Benutzer|Premiummitglied werden|ich die Vorteile der Mitgliedschaft nutzen kann|MessageBox:"Sie sind nun Premiummitglied!"|Could|
 |Premiumnutzer|die Premiummitgliedschaft beenden|ich die damit verbundenen Kosten nicht mehr tragen muss|MessageBox:"Sie sind nun kein Premiummitglied mehr!"|Could|
 |Premiumnutzer|24/7 Trading konfigurieren|ich ggf. den BOT auch dann weiterhandeln lasse, selbst wenn die App clientseitig geschlossen wurde|Aktivierter BOT handelt trotz Beendigung der App am Client|Could|
@@ -171,7 +174,7 @@ T-BOT, Nikolai Kloß
 **Echtzeithandel**
 
 | **Als** | **möchte ich** | **so dass** | **Akzeptanz** | **Priorität** |
-| :------ | :----- | :------ | :-------- |
+| :------ | :----- | :------ | :-------- | :-------- |
 |Benutzer|Positionen öffnen können|ich aktiv am Handel teilnehmen kann|Position wird im Wallet gelistet|Must|
 |Benutzer|Positionen schließen können|ich Gewinne/Verluste realisieren kann|Position wird aus der Wallet entfernt|Must|
 |Benutzer|einen selektierten BOT aktivieren können| dieser die Handelsentscheidungen für mich trifft & agiert|MessageBox:"BOT Trading ist nun aktiviert!"|Must|
@@ -182,7 +185,7 @@ T-BOT, Nikolai Kloß
 **BOTs**
 
 | **Als** | **möchte ich** | **so dass** | **Akzeptanz** | **Priorität** |
-| :------ | :----- | :------ | :-------- |
+| :------ | :----- | :------ | :-------- | :-------- |
 |Benutzer|einen BOT selektieren|ich diesen auf meinen Chart anwenden kann|In der RealtimeChartView erscheint der selektierte BOT|Must|
 |Benutzer|einen BOT konfigurieren|ich diesen nach meinen eigenen Parametern arbeiten lassen kann|MessageBox:"Ihre Parameter wurden übernommen!"|Must|
 |Benutzer|einen BOT erwerben|ich diesen für meine Charts anwendbar machen kann|MessageBox:"Dieser BOT gehört nun Ihnen!"|Won't|
@@ -261,18 +264,18 @@ T-BOT, Nikolai Kloß
 
     - Kommunikationsprotokolle
 
-      HTTPS: dient zur verschlüsselten Kommunikation, bei dem ausschließlich
-      die Clientside den Nachrichtenaustausch zum Serverside startet.
+        HTTPS: dient zur verschlüsselten Kommunikation, bei dem ausschließlich
+        die Clientside den Nachrichtenaustausch zum Serverside startet.
 
-      Websocket: ermöglicht die Benachrichtungen zwischen Clientside,
-      Serverside und Ressources.
+        Websocket: ermöglicht die Benachrichtungen zwischen Clientside,
+        Serverside und Ressources.
 
-      REST: dient der Kommunikation zum Market um beispielsweise eine Order
-      zu positionieren.
+        REST: dient der Kommunikation zum Market um beispielsweise eine Order
+        zu positionieren.
 
 
     - Datenformate
-      JSON: zur Übertragung von Nachrichten.
+        JSON: zur Übertragung von Nachrichten.
 
 
 ## 3.2 Softwarearchitektur
