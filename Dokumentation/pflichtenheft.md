@@ -154,43 +154,43 @@ T-BOT, Nikolai Kloß
 
 | **Als** | **möchte ich** | **so dass** | **Akzeptanz** | **Priorität** |
 | :------ | :----- | :------ | :-------- |
-| Benutzer| mich im System registrieren|ich mich anmelden kann|Anmeldung möglich|
-|Benutzer|mich im System anmelden|ich das System nutzen kann|Abmeldung möglich|
-|Benutzer|mich vom System abmelden|ich Sessions auf fremden Clients beenden kann|MessageBox: "Sie sind nun ausgeloggt"|
-|Benutzer|mein Passwort zurücksetzen|ich mich wieder im System anmelden kann|Anmeldung wieder möglich|
+| Benutzer| mich im System registrieren|ich mich anmelden kann|Anmeldung möglich|Must|
+|Benutzer|mich im System anmelden|ich das System nutzen kann|Abmeldung möglich|Must|
+|Benutzer|mich vom System abmelden|ich Sessions auf fremden Clients beenden kann|MessageBox: "Sie sind nun ausgeloggt"|Must|
+|Benutzer|mein Passwort zurücksetzen|ich mich wieder im System anmelden kann|Anmeldung wieder möglich|Must|
 
 **Konfiguration**
 
 | **Als** | **möchte ich** | **so dass** | **Akzeptanz** | **Priorität** |
 | :------ | :----- | :------ | :-------- |
-|Benutzer|Premiummitglied werden|ich die Vorteile der Mitgliedschaft nutzen kann|MessageBox:"Sie sind nun Premiummitglied!"|
-|Benutzer|die Premiummitgliedschaft beenden|ich die damit verbundenen Kosten nicht mehr tragen muss|MessageBox:"Sie sind nun kein Premiummitglied mehr!"
-|Benutzer|24/7 Trading konfigurieren|ich ggf. den BOT auch dann weiterhandeln lasse, selbst wenn die App clientseitig geschlossen wurde|Aktivierter BOT handelt trotz Beendigung der App am Client|
-|Benutzer|automatische Anmeldung konfigurieren|ich mich nicht ständig an bestimmten Clients anmelden muss|Bei Aufruf der App wird die Anmeldung übersprungen|
+|Benutzer|Premiummitglied werden|ich die Vorteile der Mitgliedschaft nutzen kann|MessageBox:"Sie sind nun Premiummitglied!"|Could|
+|Premiumnutzer|die Premiummitgliedschaft beenden|ich die damit verbundenen Kosten nicht mehr tragen muss|MessageBox:"Sie sind nun kein Premiummitglied mehr!"|Could|
+|Premiumnutzer|24/7 Trading konfigurieren|ich ggf. den BOT auch dann weiterhandeln lasse, selbst wenn die App clientseitig geschlossen wurde|Aktivierter BOT handelt trotz Beendigung der App am Client|Could|
+|Premiumnutzer|automatische Anmeldung konfigurieren|ich mich nicht ständig an bestimmten Clients anmelden muss|Bei Aufruf der App wird die Anmeldung übersprungen|Should|
 
 **Echtzeithandel**
 
 | **Als** | **möchte ich** | **so dass** | **Akzeptanz** | **Priorität** |
 | :------ | :----- | :------ | :-------- |
-|Benutzer|Positionen öffnen können|ich aktiv am Handel teilnehmen kann|Position wird im Wallet gelistet|
-|Benutzer|Positionen schließen können|ich Gewinne/Verluste realisieren kann|Position wird aus der Wallet entfernt|
-|Benutzer|einen selektierten BOT aktivieren können| dieser die Handelsentscheidungen für mich trifft & agiert|MessageBox:"BOT Trading ist nun aktiviert!"|
-|Benutzer|einen selektierten BOT deaktivieren können|ich die Handelsentscheidungen selber treffe & agiere|MessageBox:"BOT Trading ist nun deaktiviert"
-|Benutzer|StopLoss/TakeProfit setzen können|an den definierten Schwellwerten eine Position geschlossen wird| Position wird bei erreichen des Wertes aus dem Wallet entfernt|
-|Benutzer|eine Pending Order setzen| bei erreichen eines definierten Kurses, automatische eine Position eröffnet wird|Position erscheint bei Erfüllung der Bedingung im Wallet|
+|Benutzer|Positionen öffnen können|ich aktiv am Handel teilnehmen kann|Position wird im Wallet gelistet|Must|
+|Benutzer|Positionen schließen können|ich Gewinne/Verluste realisieren kann|Position wird aus der Wallet entfernt|Must|
+|Benutzer|einen selektierten BOT aktivieren können| dieser die Handelsentscheidungen für mich trifft & agiert|MessageBox:"BOT Trading ist nun aktiviert!"|Must|
+|Benutzer|einen selektierten BOT deaktivieren können|ich die Handelsentscheidungen selber treffe & agiere|MessageBox:"BOT Trading ist nun deaktiviert"|Must|
+|Benutzer|StopLoss/TakeProfit setzen können|an den definierten Schwellwerten eine Position geschlossen wird| Position wird bei erreichen des Wertes aus dem Wallet entfernt|Must|
+|Benutzer|eine Pending Order setzen| bei erreichen eines definierten Kurses, automatische eine Position eröffnet wird|Position erscheint bei Erfüllung der Bedingung im Wallet|Must|
 
 **BOTs**
 
 | **Als** | **möchte ich** | **so dass** | **Akzeptanz** | **Priorität** |
 | :------ | :----- | :------ | :-------- |
-|Benutzer|einen BOT selektieren|ich diesen auf meinen Chart anwenden kann|In der RealtimeChartView erscheint der selektierte BOT|
-|Benutzer|einen BOT konfigurieren|ich diesen nach meinen eigenen Parametern arbeiten lassen kann|MessageBox:"Ihre Parameter wurden übernommen!"
-|Benutzer|einen BOT erwerben|ich diesen für meine Charts anwendbar machen kann|MessageBox:"Dieser BOT gehört nun Ihnen!"|
-|Benutzer|einen BOT bewerten|andere Benutzer einen Endruck, noch vor Erwerb des Bots, kriegen können|Bewertung wird nun für alle angezeigt|
-|Benutzer|einen selbst erstellten BOT veröffentlichen| dieser von anderen Benutzern verwendet werden kann| BOT wird zum Erwerb gelistet|
-|Benutzer|einen BOT erstellen|der Handel automatisiert werden kann|Der erstellte BOT steht nun zur Auswahl|
-|Benutzer|einen erstellten BOT bearbeiten| ich diesen erweitern oder verändern kann|MessageBox:"Die Änderungen wurde gespeichert!"|
-|Benutzer|Debugging-Funktionen nutzen|die Entwicklung/Fehlerbehebung eines BOTs erleichtert wird|Setzen von Breakpoints usw. möglich|
+|Benutzer|einen BOT selektieren|ich diesen auf meinen Chart anwenden kann|In der RealtimeChartView erscheint der selektierte BOT|Must|
+|Benutzer|einen BOT konfigurieren|ich diesen nach meinen eigenen Parametern arbeiten lassen kann|MessageBox:"Ihre Parameter wurden übernommen!"|Must|
+|Benutzer|einen BOT erwerben|ich diesen für meine Charts anwendbar machen kann|MessageBox:"Dieser BOT gehört nun Ihnen!"|Won't|
+|Benutzer|einen BOT bewerten|andere Benutzer einen Endruck, noch vor Erwerb des Bots, kriegen können|Bewertung wird nun für alle angezeigt|Won't|
+|Benutzer|einen selbst erstellten BOT veröffentlichen| dieser von anderen Benutzern verwendet werden kann| BOT wird zum Erwerb gelistet|Won't|
+|Benutzer|einen BOT erstellen|der Handel nach eigener Strategie automatisiert werden kann|Der erstellte BOT steht nun zur Auswahl|Won't|
+|Benutzer|einen erstellten BOT bearbeiten| ich diesen erweitern oder verändern kann|MessageBox:"Die Änderungen wurde gespeichert!"|Won't|
+|Benutzer|Debugging-Funktionen nutzen|die Entwicklung/Fehlerbehebung eines BOTs erleichtert wird|Setzen von Breakpoints usw. möglich|Won't|
 
 # 3 Technische Beschreibung
 
