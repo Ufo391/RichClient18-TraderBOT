@@ -1,5 +1,1 @@
 *3.3 Datenmodell - Analysenklassendiagramm und ER-Diagramm
-
-*react D3 zur Chartdarstellung
-*react SemanticUI  für Views
-*Socket IO für Socket Kommunikation
