@@ -90,33 +90,36 @@ T-BOT, Nikolai Kloß
         Lage ist die folgenden HTTPS/Webbrowser auszuführen.
 
         Unterstützte Webbrowser:
-        ab Internet Explorer 9.0.8112.16421  
-        ab Mozilla Firefox 10.0
-        ab Opera 11.10
-        ab Google Chrome 10.0
+            ab Internet Explorer 9.0.8112.16421  
+            ab Mozilla Firefox 10.0
+            ab Opera 11.10
+            ab Google Chrome 10.0
 
-        Eine schnelle Internetverbindung wird empfohlen.
+            Eine schnelle Internetverbindung wird empfohlen.
 
 ### 2.2.3 Qualitätsmerkmale
     - Performance
-      Der Kern des Systems muss eine hohe Performanz vorweisen.
-      Dies bedeutet, dass eine geringe Input/Output-Latenz Priorität besitzt.
-      Ziel ist es, dass auf Ereignisse, möglichst Zeitnah eine Aktion folgt.
+          Der Kern des Systems muss eine hohe Performanz vorweisen.
+          Dies bedeutet, dass eine geringe Input/Output-Latenz Priorität besitzt.
+          Ziel ist es, dass auf Ereignisse, möglichst Zeitnah eine Aktion folgt.
 
     - Sicherheit
-      Die Kommunikation zwischen den Prozessen ist verschlüsselt.
-      Der Client greift ausschließlich auf den Website-NodeJS-Server zu.
-      Alle anderen Systemelemente liegen extra gekapselt hinter dem Website-NodeJS-Server und können auch nur von diesem kontaktiert werden.      
-      Ressourcen-Server: muss "Ressourcen-Verschwender" erkennen und deren
-      Ausführung unterbinden (bösartige Implementierungen die den Server zum Absturz bringen können z.B. while(true) Schleifen)
+          Die Kommunikation zwischen den Prozessen ist verschlüsselt.
+          Der Client greift ausschließlich auf den Website-NodeJS-Server zu.
+          Alle anderen Systemelemente liegen extra gekapselt hinter dem 
+          Website-NodeJS-Server und können auch nur von diesem kontaktiert werden.      
+      
+          Ressourcen-Server: muss "Ressourcen-Verschwender" erkennen und deren
+          Ausführung unterbinden (bösartige Implementierungen die den Server zum 
+          Absturz bringen können z.B. while(true) Schleifen)
 
     - Zuverlässigkeit
-      Ressourcen-Server: muss bei Ausfall automatisch neustarten
-      MySQL-Server: alle 12h wird ein Datenbank-BackUp angelegt
+          Ressourcen-Server: muss bei Ausfall automatisch neustarten
+          MySQL-Server: alle 12h wird ein Datenbank-BackUp angelegt
 
     - Benutzerfreundlichkeit
-      Die Views basieren auf dem "Adaptiv-Design" Layout um auf diversen Clients
-      möglichst benutzerfreundlich dargestellt zu werden.
+          Die Views basieren auf dem "Adaptiv-Design" Layout um auf diversen Clients
+          möglichst benutzerfreundlich dargestellt zu werden.
 
 
 ## 2.3 Graphische Benutzerschnittstelle
@@ -153,7 +156,7 @@ T-BOT, Nikolai Kloß
 **Allgemein:**
 
 | **Als** | **möchte ich** | **so dass** | **Akzeptanz** | **Priorität** |
-| :------ | :----- | :------ | :-------- |
+| :------ | :----- | :------ | :-------- | :-------- |
 | Benutzer| mich im System registrieren|ich mich anmelden kann|Anmeldung möglich|Must|
 |Benutzer|mich im System anmelden|ich das System nutzen kann|Abmeldung möglich|Must|
 |Benutzer|mich vom System abmelden|ich Sessions auf fremden Clients beenden kann|MessageBox: "Sie sind nun ausgeloggt"|Must|
@@ -162,7 +165,7 @@ T-BOT, Nikolai Kloß
 **Konfiguration**
 
 | **Als** | **möchte ich** | **so dass** | **Akzeptanz** | **Priorität** |
-| :------ | :----- | :------ | :-------- |
+| :------ | :----- | :------ | :-------- | :-------- |
 |Benutzer|Premiummitglied werden|ich die Vorteile der Mitgliedschaft nutzen kann|MessageBox:"Sie sind nun Premiummitglied!"|Could|
 |Premiumnutzer|die Premiummitgliedschaft beenden|ich die damit verbundenen Kosten nicht mehr tragen muss|MessageBox:"Sie sind nun kein Premiummitglied mehr!"|Could|
 |Premiumnutzer|24/7 Trading konfigurieren|ich ggf. den BOT auch dann weiterhandeln lasse, selbst wenn die App clientseitig geschlossen wurde|Aktivierter BOT handelt trotz Beendigung der App am Client|Could|
@@ -171,7 +174,7 @@ T-BOT, Nikolai Kloß
 **Echtzeithandel**
 
 | **Als** | **möchte ich** | **so dass** | **Akzeptanz** | **Priorität** |
-| :------ | :----- | :------ | :-------- |
+| :------ | :----- | :------ | :-------- | :-------- |
 |Benutzer|Positionen öffnen können|ich aktiv am Handel teilnehmen kann|Position wird im Wallet gelistet|Must|
 |Benutzer|Positionen schließen können|ich Gewinne/Verluste realisieren kann|Position wird aus der Wallet entfernt|Must|
 |Benutzer|einen selektierten BOT aktivieren können| dieser die Handelsentscheidungen für mich trifft & agiert|MessageBox:"BOT Trading ist nun aktiviert!"|Must|
@@ -182,7 +185,7 @@ T-BOT, Nikolai Kloß
 **BOTs**
 
 | **Als** | **möchte ich** | **so dass** | **Akzeptanz** | **Priorität** |
-| :------ | :----- | :------ | :-------- |
+| :------ | :----- | :------ | :-------- | :-------- |
 |Benutzer|einen BOT selektieren|ich diesen auf meinen Chart anwenden kann|In der RealtimeChartView erscheint der selektierte BOT|Must|
 |Benutzer|einen BOT konfigurieren|ich diesen nach meinen eigenen Parametern arbeiten lassen kann|MessageBox:"Ihre Parameter wurden übernommen!"|Must|
 |Benutzer|einen BOT erwerben|ich diesen für meine Charts anwendbar machen kann|MessageBox:"Dieser BOT gehört nun Ihnen!"|Won't|
