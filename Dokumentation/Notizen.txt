@@ -1,7 +1,4 @@
-*Alle GUIs anfertigen
-*UseCase-Diagramme Premiumbenutzer als Actor anlegen und zuordnen
 *UserSotories erweitern um Premiumbenutzer und Zuordnung Prioisieren nach Moskau prinzip (Was kann geschafft werden und was nicht --> siehe Vorlage)
-*Architekturdiagramm: MYSQL auslagern, Websockts als Kommunikation
 *Schnitstellenbeschreibung - Ausformulierte Schnitstellen je nach Use Case ( Bei REST z.B. die verfügbaren Routen)
 *Kommunikationsprotikolle - Websockets, TCIP oder Websockets
 *Datenformate z.B. JSON

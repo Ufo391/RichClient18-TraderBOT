@@ -122,21 +122,28 @@ T-BOT, Nikolai Kloß
 ## 2.3 Graphische Benutzerschnittstelle
     - GUI-Mockups passend zu User Stories
 
-![LoginView](MockUps/LoginView.png)
-![RegisterView](MockUps/RegisterView.png)
-![WalletView](MockUps/WalletView.png)
-![WalletView-Sidebar](MockUps/WalletViewSidebarMenu.png)
-![RealtimechartView](MockUps/RealtimeChartView.png)
-![HistoryView](MockUps/HistoryView.png)
-![StrategyEditorView](MockUps/StrategyEditorView.png)
-![StrategyChooserView-Code](MockUps/StrategyEditorView-Code.png)
-![StrategyChooserView-Debug](MockUps/StrategyEditorView-Debug.png)
-![StrategyChooserView-Options](MockUps/StrategyEditorView-Options.png)
-![BOTSettingsView](MockUps/BOTSettingsView.png)
-![UserSettingsView](MockUps/UserSettingsView.png)
+![](Mockups/RegisterView.png)
+![](Mockups/LoginView.png)
+![](Mockups/WalletView.png)
+![](Mockups/WalletViewSidebarMenu.png)
+![](Mockups/WalletViewClosePosition.png)
+![](Mockups/RealtimeChartView.png)
+![](Mockups/RealtimeChartViewPosition.png)
+![](Mockups/BOTsView.png)
+![](Mockups/BOTsViewPopUpMenu.png)
+![](Mockups/BOTSettingsView.png)
+![](Mockups/BOTsRatingView.png)
+![](Mockups/AppSettings.png)
+![](Mockups/HistoryView1.png)
+![](Mockups/PaymentView.png)
+![](Mockups/StrategyEditorView.png)
+![](Mockups/StrategyEditorView-Code.png)
+![](Mockups/StrategyEditorView-Debug.png)
+![](Mockups/StrategyEditorView-Options.png)
+
 
     - Modellierung der Navigation zwischen den Screens der GUI-Mockups als Zustandsdiagramm
-![Navigation](MockUps/Navigation.png)
+![Navigation](MockUps/Mockups_Statediagram.png)
 
 ## 2.4 Anforderungen im Detail
     - User Stories mit Akzeptanzkritierien
@@ -145,7 +152,7 @@ T-BOT, Nikolai Kloß
 
 **Allgemein:**
 
-| **Als** | **möchte ich** | **so dass** | **Akzeptanz** |
+| **Als** | **möchte ich** | **so dass** | **Akzeptanz** | **Priorität** |
 | :------ | :----- | :------ | :-------- |
 | Benutzer| mich im System registrieren|ich mich anmelden kann|Anmeldung möglich|
 |Benutzer|mich im System anmelden|ich das System nutzen kann|Abmeldung möglich|
@@ -154,7 +161,7 @@ T-BOT, Nikolai Kloß
 
 **Konfiguration**
 
-| **Als** | **möchte ich** | **so dass** | **Akzeptanz** |
+| **Als** | **möchte ich** | **so dass** | **Akzeptanz** | **Priorität** |
 | :------ | :----- | :------ | :-------- |
 |Benutzer|Premiummitglied werden|ich die Vorteile der Mitgliedschaft nutzen kann|MessageBox:"Sie sind nun Premiummitglied!"|
 |Benutzer|die Premiummitgliedschaft beenden|ich die damit verbundenen Kosten nicht mehr tragen muss|MessageBox:"Sie sind nun kein Premiummitglied mehr!"
@@ -163,7 +170,7 @@ T-BOT, Nikolai Kloß
 
 **Echtzeithandel**
 
-| **Als** | **möchte ich** | **so dass** | **Akzeptanz** |
+| **Als** | **möchte ich** | **so dass** | **Akzeptanz** | **Priorität** |
 | :------ | :----- | :------ | :-------- |
 |Benutzer|Positionen öffnen können|ich aktiv am Handel teilnehmen kann|Position wird im Wallet gelistet|
 |Benutzer|Positionen schließen können|ich Gewinne/Verluste realisieren kann|Position wird aus der Wallet entfernt|
@@ -174,7 +181,7 @@ T-BOT, Nikolai Kloß
 
 **BOTs**
 
-| **Als** | **möchte ich** | **so dass** | **Akzeptanz** |
+| **Als** | **möchte ich** | **so dass** | **Akzeptanz** | **Priorität** |
 | :------ | :----- | :------ | :-------- |
 |Benutzer|einen BOT selektieren|ich diesen auf meinen Chart anwenden kann|In der RealtimeChartView erscheint der selektierte BOT|
 |Benutzer|einen BOT konfigurieren|ich diesen nach meinen eigenen Parametern arbeiten lassen kann|MessageBox:"Ihre Parameter wurden übernommen!"
