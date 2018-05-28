@@ -1,8 +1,8 @@
-*UserSotories erweitern um Premiumbenutzer und Zuordnung Prioisieren nach Moskau prinzip (Was kann geschafft werden und was nicht --> siehe Vorlage)
-*Schnitstellenbeschreibung - Ausformulierte Schnitstellen je nach Use Case ( Bei REST z.B. die verfügbaren Routen)
-*Kommunikationsprotikolle - Websockets, TCIP oder Websockets
 *Datenformate z.B. JSON
 *3.2 Softwarearchitektur - Darstellung von Softwarebausteinen (konkrete Module bennenn z.B. MYSQL Modul oder MQL-C# Bridge)
 *3.3 Datenmodell - Analysenklassendiagramm und ER-Diagramm
 *3.4 Optional
 *3.5 Alle verwendeten Tools auflisten (z.B. Visual Studio Code Version x)
+
+*react D3 zur Chartdarstellung
+*react SemanticUI  für Views

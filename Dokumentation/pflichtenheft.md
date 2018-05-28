@@ -196,18 +196,74 @@ T-BOT, Nikolai Kloß
 
 ## 3.1 Systemübersicht
     - Systemarchitekturdiagramm ("Box-And-Arrow" Diagramm)
-![](Architektur/Architekturdiagramm.png)
+![](Architektur/Architekturdiagramm1.png)
     - Schnittstellenbeschreibung
-    Die MYSQL Datenbank wird als Modul in NodeJS eingebunden und benötigt somit
-    keine spezielle Schnitstelle.
+
+      [Clientside]:
+        Websocket: Empfänger - für Benachrichtigungen von Serverside
+
+          Route: für kritische (Fehler) Meldungen
+          Route: für die Bestätigung einer Orderausführung
+          Route: für Systeminformationen
+          Route: für BOT-Nachrichten
+          Route: für die Bewertung eines erstellten BOTs
+
+        HTTPS: Sender - für Viewspezifische Kommunikation
+
+          Route: für die verschiedenen Views
+          Route: für die Premiummitgliedschaft
+          Route: für die Konfiguration der App
+          Route: für die Orders
+          Route: für den Verkauf eines BOTs
+          Route: für den Einkauf eines BOTs
+
+      [Serverside]:
+
+        Websocket: Sender - für Benachrichtungen zur Clientside
+
+          Route: für kritische (Fehler) Meldungen
+          Route: für die Bestätigung einer Orderausführung
+          Route: für Systeminformationen
+          Route: für BOT-Nachrichten
+          Route: für die Bewertung eines erstellten BOTs
+
+        Websocket: Bidirektional - für Kommunikation zu Ressources
+
+          Route: für Start/Stop eines BOTs
+          Route: für die Parametrisierung des BOTs
+          Route: für Status des BOTs
+
+        Websocket: Sender - für Kommunikation zu Database
+
+          Route: für Versand von Anfragen
+
+      [Ressources]:
+
+        Websocket: Bidirektional - für Kommunikation zu Ressources
+
+          Route: für Start/Stop eines BOTs
+          Route: für die Parametrisierung des BOTs
+          Route: für Statusnachrichten des BOTs
+
+      [Database]:
+
+        Websocket: Empfänger - für Kommunikation von Serverside
+
+          Route: für Empfang von Anfragen
+
+
 
     - Kommunikationsprotokolle
-    Zur Kommunikation zwischen Serverside und Clientside kommt HTTPS zum Einsatz.
-    Um zwischen Ressourcen und Serverside zu kommunizieren wird das REST Pattern
-    eingesetzt.
+
+      HTTPS: dient zur verschlüsselten Kommunikation, bei dem ausschließlich
+      die Clientside den Nachrichtenaustausch zum Serverside startet.
+
+      Websocket: ermöglicht die Benachrichtungen zwischen Clientside,
+      Serverside und Ressources.
+
 
     - Datenformate
-    Zur Datenhaltung verwendet das System eine relationale MYSQL Datenbank.
+      JSON: zur Übertragung von Nachrichten. 
 
 
 ## 3.2 Softwarearchitektur
