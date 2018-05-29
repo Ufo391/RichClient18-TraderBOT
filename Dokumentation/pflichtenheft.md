@@ -335,6 +335,21 @@ Trader-BOT, Nikolai Kloß
 
 ## 5.1 Glossar
     - Definitionen, Abkürzungen, Begriffe
+        T-BOT - Abkürzung für Trader-BOT.
+        Position - Am Markt eingekaufte Kryptowährung.
+        Depot - Eine Sammlung an Positionen.
+        Wallet - Synonym für Depot
+        Markt - Handelsplatz an dem Positionen geöffnet und geschlossen werden können.
+        BOT - Algorithmus zum automatisierten Handel.
+        PWA - Abkürzung für progressive-web-application.
+        Trading - Synonym für Handel.        
+        Order - Ein Auftrag, welche die Absicht einer Positionierung erzielt.
+        Indize - Grafische Visualisierung unter bestimmten Bedingungen innerhalb eines Charts.
+        Chart - Visualisierung des Kurses.
+        Kryptowährung - bankenunabhängige digitale Währung.
+        Spekulationsgeschäft - Kauf/Verkauf einer Position mit Gewinnabsicht.
+        Bidirektional - Kommunikation in Sender- und Empfängerrichtung.
+
 
 ## 5.2 Referenzen
     - Handbücher, Gesetze
