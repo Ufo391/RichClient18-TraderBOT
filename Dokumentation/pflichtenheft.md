@@ -286,6 +286,9 @@ Trader-BOT, Nikolai Kloß
 ## 3.3 Datenmodell
     - Konzeptionelles Analyseklassendiagramm
 
+    - Entity-Relationship-Modell
+![](ER-Diagramm/ER-Diagramm.png)
+
 ## 3.4 Abläufe
     - Aktivitätsdiagramme für relevante Use Cases
     - Aktivitätsdiagramm für den Ablauf sämtlicher Use Cases
