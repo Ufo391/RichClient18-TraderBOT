@@ -285,6 +285,7 @@ Trader-BOT, Nikolai Kloß
 
 ## 3.3 Datenmodell
     - Konzeptionelles Analyseklassendiagramm
+![](Analysenklassendiagramm/Analysenklassendiagramm.png)
 
     - Entity-Relationship-Modell
 ![](ER-Diagramm/ER-Diagramm.png)
