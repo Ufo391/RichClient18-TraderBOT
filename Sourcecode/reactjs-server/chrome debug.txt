@@ -1,0 +1,8 @@
+1)
+	Starten von Server in VS-Code-Terminal
+
+2)
+	In Terminal eingeben: google-chrome --remote-debugging-port=9222
+
+3)
+	ein tab öffnen mit URL: localhost:3000
