@@ -1,14 +1,34 @@
 import React, { Component } from 'react';
+import { Button, Input, Checkbox } from 'semantic-ui-react'
 
 class Login extends Component {
+
     render() {
-      return (
-        
+      return (        
         <div className="Login">
-          <h1>Hallo Ciao Ciao</h1>
-        </div>
-       
-      );
+        <img src={ require('../ressources/ICON.png')} alt="Logo" />
+          <p>
+            <Input placeholder='E-Mail..' />
+          </p>
+          <p>
+            <Input placeholder='Passwort' />
+          </p>
+          <p>
+            <div class="ui checkbox">
+              <input name="example" type="checkbox"/>
+              <label>automatisch anmelden</label>
+            </div>
+          </p>
+
+<p/>
+<p/>
+<p/>
+<p/>
+<Button>Anmelden</Button>
+
+
+        </div>                
+      )
     }
   }
   
