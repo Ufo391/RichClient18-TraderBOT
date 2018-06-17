@@ -1,0 +1,27 @@
+{
+  "name": "traderbot_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "body-parser": "~1.9.2",
+    "express": "4.15.3",
+    "express-fileupload": "^0.3.0",
+    "express-session": "~1.15.1",
+    "ftpd": "^0.2.15",
+    "jwt-simple": "^0.3.1",
+    "morgan": "~1.5.0",
+    "mysql": "^2.15.0",
+    "url": "^0.11.0"
+  },
+  "author": "Nikolai Kloss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ufo391/KSWE_CODE_SERVER/issues"
+  },
+  "homepage": "https://github.com/Ufo391/KSWE_CODE_SERVER#readme"
+}
