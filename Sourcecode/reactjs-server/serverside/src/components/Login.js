@@ -46,7 +46,7 @@ class Login extends Component {
   }
 
   run(){
-    let x = 5;
+    alert(this.state.username);
   }
 
   // React Methoden
@@ -54,11 +54,11 @@ class Login extends Component {
   render() {
     return (
       <div className="Login" style={styles}>
-        <form action={this.run}>
+        <form onSubmit={this.run}>
 
           <p><img src={require('../ressources/ICON.png')} alt="Logo" /></p>
           <p><Input id={id_mail} placeholder='E-Mail..' onChange={this.handleChange}/></p>
-          <p><Input id={id_password} placeholder='Passwort..' onChange={this.handleChange}/></p>
+          <p><Input id={id_password} placeholder='Passwort..' type="password" onChange={this.handleChange}/></p>
           <p><div class="ui checkbox">
             <input id={id_autologin} type="checkbox" onClick={this.handleChange}/>
             <label>automatisch anmelden</label>
