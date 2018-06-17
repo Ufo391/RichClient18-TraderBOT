@@ -1,0 +1,3 @@
+>Clientside axios will nicht funktionieren.
+	Postman GET funktioniert zum Nodejs Server
+	Clientside --> Login.js --> request()
