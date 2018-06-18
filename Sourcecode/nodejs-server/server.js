@@ -11,8 +11,6 @@ var tokenHandler = require('./app/security/tokenHandler');
 var infoHandler = require('./app/com/InfoHandler');
 var ip = require('./app/util/ip')
 
-var cors = require('cors');
-
 // instances
 var app = express();
 
@@ -35,10 +33,6 @@ var apiRoutes = express.Router();
 // connect the api routes under /api/*
 app.use('/api', apiRoutes);
 
-// Für axios
-app.use(cors());
-
-
 // functions
 
 var server = app.listen(server_port, function () {
@@ -51,7 +45,8 @@ var server = app.listen(server_port, function () {
 // routes
 
 apiRoutes.get('/info', function (req, res) {
-  res.json({success: true, msg: 'Hallo'});
+  //console.log(req);
+  res.json({success: true, msg: 'Hallo ... ciao'});
   //tokenHandler(req, res, infoHandler);
 })
 
