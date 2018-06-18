@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Input } from 'semantic-ui-react';
 import axios from 'axios';
+import fetch from 'node-fetch';
 
 const _margin = 150;
 
@@ -23,7 +24,6 @@ class Login extends Component {
       username: '',
       password: '',
       auto_login: false,
-      debug: '-'
 
     };
 
@@ -48,13 +48,18 @@ class Login extends Component {
   }
 
   request() {
-    axios.get("http://192.168.102.128:3040/api/info")
-      .then(function (response) {
-        this.setState({ debug: response });
-      })
-      .catch(function (error) {
-        this.setState({ debug: error });
-      });
+    
+    axios.get('http://localhost:3040/api/info').then(function(response){
+     alert(response);
+    }).catch(function(error){
+      alert(error);
+    });
+    
+    /*
+    fetch('http://192.168.102.128:3040/api/info')
+      .then(res => res.text())
+      .then(body => console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> " + body));
+      */
   }
 
   // React Methoden
@@ -62,7 +67,7 @@ class Login extends Component {
   render() {
     return (
       <div className="Login" style={styles}>
-        <form onSubmit={this.request}>
+        <form>
 
           <p><img src={require('../ressources/ICON.png')} alt="Logo" /></p>
           <p><Input id={id_mail} placeholder='E-Mail..' onChange={this.handleChange} /></p>
@@ -71,8 +76,7 @@ class Login extends Component {
             <input id={id_autologin} type="checkbox" onClick={this.handleChange} />
             <label>automatisch anmelden</label>
           </div></p>
-          <p><Button type="submit" >Anmelden</Button></p>
-          <p>{this.state.debug}</p>
+          <p><Button type="submit" onClick={this.request}>Anmelden</Button></p>
 
         </form>
       </div>
