@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Input } from 'semantic-ui-react';
 import axios from 'axios';
-import fetch from 'node-fetch';
 
 const _margin = 150;
 
@@ -48,18 +47,13 @@ class Login extends Component {
   }
 
   request() {
-    
-    axios.get('http://localhost:3040/api/info').then(function(response){
-     alert(response);
-    }).catch(function(error){
-      alert(error);
+
+    axios.get('http://localhost:3040/api/info').then(function (response) {
+      let data = JSON.stringify(response.data);
+      alert(data);      
+    }).catch(function (error) {
+      console.log(error);
     });
-    
-    /*
-    fetch('http://192.168.102.128:3040/api/info')
-      .then(res => res.text())
-      .then(body => console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> " + body));
-      */
   }
 
   // React Methoden
@@ -67,18 +61,16 @@ class Login extends Component {
   render() {
     return (
       <div className="Login" style={styles}>
-        <form>
 
-          <p><img src={require('../ressources/ICON.png')} alt="Logo" /></p>
-          <p><Input id={id_mail} placeholder='E-Mail..' onChange={this.handleChange} /></p>
-          <p><Input id={id_password} placeholder='Passwort..' type="password" onChange={this.handleChange} /></p>
-          <p><div class="ui checkbox">
-            <input id={id_autologin} type="checkbox" onClick={this.handleChange} />
-            <label>automatisch anmelden</label>
-          </div></p>
-          <p><Button type="submit" onClick={this.request}>Anmelden</Button></p>
+        <p><img src={require('../ressources/ICON.png')} alt="Logo" /></p>
+        <p><Input id={id_mail} placeholder='E-Mail..' onChange={this.handleChange} /></p>
+        <p><Input id={id_password} placeholder='Passwort..' type="password" onChange={this.handleChange} /></p>
+        <p><div class="ui checkbox">
+          <input id={id_autologin} type="checkbox" onClick={this.handleChange} />
+          <label>automatisch anmelden</label>
+        </div></p>
+        <p><Button onClick={this.request}>Anmelden</Button></p>
 
-        </form>
       </div>
     )
   }

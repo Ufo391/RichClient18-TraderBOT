@@ -4,7 +4,7 @@ var upload = require('express-fileupload');
 
 var bodyParser = require('body-parser');
 var morgan = require('morgan');
-
+var cors = require('cors');
 var user = require('./app/model/user');
 var fileT = require('./app/com/filetransfer');
 var tokenHandler = require('./app/security/tokenHandler');
@@ -33,6 +33,8 @@ var apiRoutes = express.Router();
 // connect the api routes under /api/*
 app.use('/api', apiRoutes);
 
+app.use(cors());
+
 // functions
 
 var server = app.listen(server_port, function () {
@@ -46,7 +48,7 @@ var server = app.listen(server_port, function () {
 
 apiRoutes.get('/info', function (req, res) {
   //console.log(req);
-  res.json({success: true, msg: 'Hallo ... ciao'});
+  res.json({success: true, msg: "Hallo ... ciao"});
   //tokenHandler(req, res, infoHandler);
 })
 
