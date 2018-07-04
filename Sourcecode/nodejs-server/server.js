@@ -32,23 +32,14 @@ var apiRoutes = express.Router();
 
 // connect the api routes under /api/*
 app.use('/api', apiRoutes);
-
 app.use(cors());
-
-// functions
-
-var server = app.listen(server_port, function () {
-
-  fileT.initialize();
-  ip.initialize(server);
-
-})
+app.options('/api/info', cors())
 
 // routes
 
-apiRoutes.get('/info', function (req, res) {
-  //console.log(req);
-  res.json({success: true, msg: "Hallo ... ciao"});
+apiRoutes.post('/info', function (req, res) {
+  console.log(JSON.parse(req.body).topic);
+  res.json({success: true, msg: req.body});
   //tokenHandler(req, res, infoHandler);
 })
 
@@ -58,4 +49,13 @@ apiRoutes.post('/signup', function (req, res) {
 
 apiRoutes.get('/authenticate', function (req, res) {
   user.login(req, res);
+})
+
+// functions
+
+var server = app.listen(server_port, function () {
+
+  fileT.initialize();
+  ip.initialize(server);
+
 })

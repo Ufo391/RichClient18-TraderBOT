@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Input } from 'semantic-ui-react';
 import axios from 'axios';
+let serverRoutes = require('../util/ServerRoutes');
 
 const _margin = 150;
 
@@ -36,24 +37,49 @@ class Login extends Component {
   handleChange(event) {
 
     if (event.target.id === id_mail) {
-      this.setState({ username: "name: " + event.target.value });
+      this.setState({ username: event.target.value });
     }
     else if (event.target.id === id_password) {
-      this.setState({ password: "pws: " + event.target.value });
+      this.setState({ password: this.crypt(event.target.value) });
     }
     else if (event.target.id === id_autologin) {
       this.setState({ auto_login: event.target.checked });
     }
   }
 
-  request() {
+  crypt(input){
+    // Verschlüssel die PW eingabe !!!!!111111elllf <<<<<<<<<<<<<<<<<<    
+    return input;
+  }
 
-    axios.get('http://localhost:3040/api/info').then(function (response) {
+  request() {
+/*
+    axios.post(serverRoutes.login,this.username).then(function (response) {
+      let data = JSON.stringify(response.data);
+      alert(data);            
+    }).catch(function (error) {
+      console.log(error);
+    });
+    */
+/*
+    axios.get(serverRoutes.loginRoute).then(function (response) {
       let data = JSON.stringify(response.data);
       alert(data);      
     }).catch(function (error) {
       console.log(error);
     });
+    */
+
+   const fakeData = [ { fake: 'data' } ];
+
+   const payload = {
+     topic: 'topic',
+     logs: fakeData,
+   };
+   
+   const url = 'http://localhost:3040/api/info';
+   axios.post(url, JSON.stringify(payload)); 
+
   }
 
   // React Methoden
