@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Button, Input } from 'semantic-ui-react';
 import axios from 'axios';
 let serverRoutes = require('../util/ServerRoutes');
+var md5 = require('md5');
 
 const _margin = 150;
 
@@ -23,7 +24,7 @@ class Login extends Component {
 
       mail: '',
       password: '',
-      auto_login: false,      
+      auto_login: false,
 
     };
 
@@ -48,8 +49,7 @@ class Login extends Component {
   }
 
   crypt(input) {
-    // Verschlüssel die PW eingabe !!!!!111111elllf <<<<<<<<<<<<<<<<<<    
-    return input;
+    return md5(input);
   }
 
   request() {
