@@ -44,7 +44,10 @@ apiRoutes.post('/info', function (req, res) {
 })
 
 apiRoutes.post('/signup', function (req, res) {
-  user.register(req, res);
+  console.log(req.body);
+  res.json({success: true, msg: 'Hallo'});
+  
+  //user.register(req, res);
 })
 
 apiRoutes.get('/authenticate', function (req, res) {
