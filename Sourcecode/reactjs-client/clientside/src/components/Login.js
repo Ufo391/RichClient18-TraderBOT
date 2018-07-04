@@ -21,9 +21,9 @@ class Login extends Component {
     super(props);
     this.state = {
 
-      username: '',
+      mail: '',
       password: '',
-      auto_login: false,
+      auto_login: false,      
 
     };
 
@@ -37,7 +37,7 @@ class Login extends Component {
   handleChange(event) {
 
     if (event.target.id === id_mail) {
-      this.setState({ username: event.target.value });
+      this.setState({ mail: event.target.value });
     }
     else if (event.target.id === id_password) {
       this.setState({ password: this.crypt(event.target.value) });
@@ -47,39 +47,32 @@ class Login extends Component {
     }
   }
 
-  crypt(input){
+  crypt(input) {
     // Verschlüssel die PW eingabe !!!!!111111elllf <<<<<<<<<<<<<<<<<<    
     return input;
   }
 
   request() {
-/*
-    axios.post(serverRoutes.login,this.username).then(function (response) {
-      let data = JSON.stringify(response.data);
-      alert(data);            
-    }).catch(function (error) {
-      console.log(error);
-    });
-    */
-/*
-    axios.get(serverRoutes.loginRoute).then(function (response) {
-      let data = JSON.stringify(response.data);
-      alert(data);      
-    }).catch(function (error) {
-      console.log(error);
-    });
-    */
 
-   const fakeData = [ { fake: 'data' } ];
+    if (this.validateInputs() === true) {
+      const payload = {
 
-   const payload = {
-     topic: 'topic',
-     logs: fakeData,
-   };
-   
-   const url = 'http://localhost:3040/api/info';
-   axios.post(url, JSON.stringify(payload)); 
+        mail: this.state.mail,
+        password: this.state.password,
+        auto_login: this.state.auto_login,
 
+      };
+
+      axios.post(serverRoutes.login, JSON.stringify(payload));
+    }
+    else {
+      alert("Bitte prüfen Sie Ihre Eingaben!");
+    }
+
+  }
+
+  validateInputs() {
+    return this.state.mail.includes("@") && this.state.password.length > 0;
   }
 
   // React Methoden

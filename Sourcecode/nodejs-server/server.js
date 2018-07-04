@@ -38,8 +38,8 @@ app.options('/api/info', cors())
 // routes
 
 apiRoutes.post('/info', function (req, res) {
-  console.log(JSON.parse(req.body).topic);
-  res.json({success: true, msg: req.body});
+  console.log(req.body);
+  res.json({success: true, msg: 'Hallo'});
   //tokenHandler(req, res, infoHandler);
 })
 
