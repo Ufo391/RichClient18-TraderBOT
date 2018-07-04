@@ -91,7 +91,7 @@ class Login extends Component {
           <label>automatisch anmelden</label>
         </div></p>
         <p><Button onClick={this.request}>Anmelden</Button></p>
-        <Link to="/">Passwort vergessen</Link>  |  <Link to="/">Registrieren</Link>
+        <Link to="/">Passwort vergessen</Link>  |  <Link to="/register">Registrieren</Link>
 
 
       </div>

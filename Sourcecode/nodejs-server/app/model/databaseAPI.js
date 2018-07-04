@@ -7,7 +7,7 @@ var connection_info = {
     host: "localhost",
     user: "root",
     password: "starduell123",
-    database: "starduell"
+    database: "TraderBOT"
   };
 
   // Hilfsfunktionen
@@ -70,8 +70,8 @@ module.exports.createUser = function (name,password,email,response, res){
     
 }
 
-module.exports.findUserByName = function(name, callback){
-        var _query = "select * from Person where username = '" + name + "';";        
+module.exports.findUserByMail = function(mail, callback){
+        var _query = "select * from Benutzer where mail = '" + mail + "';";        
         execute(_query,callback);
 }
 

@@ -4,11 +4,9 @@ var upload = require('express-fileupload');
 
 var bodyParser = require('body-parser');
 var morgan = require('morgan');
-var cors = require('cors');
 var user = require('./app/model/user');
 var fileT = require('./app/com/filetransfer');
 var tokenHandler = require('./app/security/tokenHandler');
-var infoHandler = require('./app/com/InfoHandler');
 var ip = require('./app/util/ip')
 
 // instances
@@ -32,26 +30,23 @@ var apiRoutes = express.Router();
 
 // connect the api routes under /api/*
 app.use('/api', apiRoutes);
-app.use(cors());
-app.options('/api/info', cors())
 
 // routes
 
 apiRoutes.post('/info', function (req, res) {
   console.log(req.body);
-  res.json({success: true, msg: 'Hallo'});
+  res.json({ success: true, msg: 'Hallo' });
   //tokenHandler(req, res, infoHandler);
 })
 
 apiRoutes.post('/signup', function (req, res) {
-  console.log(req.body);
-  res.json({success: true, msg: 'Hallo'});
-  
-  //user.register(req, res);
+  user.register(req, res);
 })
 
-apiRoutes.get('/authenticate', function (req, res) {
-  user.login(req, res);
+apiRoutes.post('/authenticate', function (req, res) {
+  console.log(req.headers);
+  res.json({ success: true, msg: 'Hallo' });
+  //user.login(req, res);
 })
 
 // functions
