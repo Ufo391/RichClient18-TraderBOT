@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import { Button, Input } from 'semantic-ui-react';
+import { Button, Input, Grid, Segment, Divider } from 'semantic-ui-react';
 import axios from 'axios';
-import fetch from 'node-fetch';
+import { Link } from "react-router-dom";
+
+let serverRoutes = require('../util/ServerRoutes');
+var md5 = require('md5');
 
 const _margin = 150;
 
@@ -21,7 +24,7 @@ class Login extends Component {
     super(props);
     this.state = {
 
-      username: '',
+      mail: '',
       password: '',
       auto_login: false,
 
@@ -37,29 +40,41 @@ class Login extends Component {
   handleChange(event) {
 
     if (event.target.id === id_mail) {
-      this.setState({ username: "name: " + event.target.value });
+      this.setState({ mail: event.target.value });
     }
     else if (event.target.id === id_password) {
-      this.setState({ password: "pws: " + event.target.value });
+      this.setState({ password: this.crypt(event.target.value) });
     }
     else if (event.target.id === id_autologin) {
       this.setState({ auto_login: event.target.checked });
     }
   }
 
+  crypt(input) {
+    return md5(input);
+  }
+
   request() {
-    
-    axios.get('http://localhost:3040/api/info').then(function(response){
-     alert(response);
-    }).catch(function(error){
-      alert(error);
-    });
-    
-    /*
-    fetch('http://192.168.102.128:3040/api/info')
-      .then(res => res.text())
-      .then(body => console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> " + body));
-      */
+
+    if (this.validateInputs() === true) {
+      const payload = {
+
+        mail: this.state.mail,
+        password: this.state.password,
+        auto_login: this.state.auto_login,
+
+      };
+
+      axios.post(serverRoutes.login, JSON.stringify(payload));
+    }
+    else {
+      alert("Bitte prüfen Sie Ihre Eingaben!");
+    }
+
+  }
+
+  validateInputs() {
+    return this.state.mail.includes("@") && this.state.password.length > 0;
   }
 
   // React Methoden
@@ -67,18 +82,18 @@ class Login extends Component {
   render() {
     return (
       <div className="Login" style={styles}>
-        <form>
 
-          <p><img src={require('../ressources/ICON.png')} alt="Logo" /></p>
-          <p><Input id={id_mail} placeholder='E-Mail..' onChange={this.handleChange} /></p>
-          <p><Input id={id_password} placeholder='Passwort..' type="password" onChange={this.handleChange} /></p>
-          <p><div class="ui checkbox">
-            <input id={id_autologin} type="checkbox" onClick={this.handleChange} />
-            <label>automatisch anmelden</label>
-          </div></p>
-          <p><Button type="submit" onClick={this.request}>Anmelden</Button></p>
+        <p><img src={require('../ressources/ICON.png')} alt="Logo" /></p>
+        <p><Input id={id_mail} placeholder='E-Mail..' onChange={this.handleChange} /></p>
+        <p><Input id={id_password} placeholder='Passwort..' type="password" onChange={this.handleChange} /></p>
+        <p><div class="ui checkbox">
+          <input id={id_autologin} type="checkbox" onClick={this.handleChange} />
+          <label>automatisch anmelden</label>
+        </div></p>
+        <p><Button onClick={this.request}>Anmelden</Button></p>
+        <Link to="/">Passwort vergessen</Link>  |  <Link to="/register">Registrieren</Link>
 
-        </form>
+
       </div>
     )
   }
