@@ -1,3 +1,13 @@
 >Clientside axios will nicht funktionieren.
 	Postman GET funktioniert zum Nodejs Server
 	Clientside --> Login.js --> request()
+
+register.js
+	seitenwechel nach register --> siehe weblink im Code
+	Datenbank eintrag implementieren
+
+App.js 
+	Herausfinden wie man Komponenten aus anderen js Datein einbindet
+		https://charleslbryant.gitbooks.io/hello-react-and-typescript/content/Samples/ComponentsInSeparateFiles.html
+
+https://www.tutorialspoint.com/reactjs/reactjs_components.htm
